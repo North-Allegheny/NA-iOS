@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         println("hi")
     }
 
+    func iDidAThing(){
+        println("heyo this is kevin here i did a thing n i want u 2 no so pls see this alex")
+    }
 
 }
 
