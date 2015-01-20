@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if isLoggedIn(){
+            performSegueWithIdentifier(<#identifier: String#>, sender: <#AnyObject?#>)
+        }
+        else{
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,12 +26,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         //HI GUYS
     }
-    func test(){
-        println("hi")
+    func isLoggedIn()->Bool{
+        return true
     }
-
-    func iDidAThing(){
-        println("heyo this is kevin here i did a thing n i want u 2 no so pls see this alex")
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
     }
 
 }

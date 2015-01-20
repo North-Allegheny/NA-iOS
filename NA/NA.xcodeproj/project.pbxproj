@@ -14,6 +14,8 @@
 		772D5E9D1A6461F300279AD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772D5E9C1A6461F300279AD0 /* Images.xcassets */; };
 		772D5EA01A6461F300279AD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */; };
 		772D5EAC1A6461F300279AD0 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5EAB1A6461F300279AD0 /* NATests.swift */; };
+		77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */; };
+		77E690FE1A6EE81400E24C05 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		772D5EA51A6461F300279AD0 /* NATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		772D5EAA1A6461F300279AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772D5EAB1A6461F300279AD0 /* NATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATests.swift; sourceTree = "<group>"; };
+		77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */,
 				772D5E941A6461F300279AD0 /* NA.xcdatamodeld */,
 				772D5E901A6461F300279AD0 /* Supporting Files */,
+				77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */,
+				77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 				772D5E981A6461F300279AD0 /* ViewController.swift in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
 				772D5E931A6461F300279AD0 /* AppDelegate.swift in Sources */,
+				77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */,
+				77E690FE1A6EE81400E24C05 /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				772D5EB11A6461F300279AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		772D5EB21A6461F300279AD0 /* Build configuration list for PBXNativeTarget "NATests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				772D5EB41A6461F300279AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
