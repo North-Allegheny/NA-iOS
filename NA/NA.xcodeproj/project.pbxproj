@@ -16,12 +16,6 @@
 		772D5EAC1A6461F300279AD0 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5EAB1A6461F300279AD0 /* NATests.swift */; };
 		77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */; };
 		77E690FE1A6EE81400E24C05 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */; };
-		77E6910D1A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E691011A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.m */; };
-		77E6910E1A6EF31400E24C05 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E691031A6EF31400E24C05 /* ECSlidingAnimationController.m */; };
-		77E6910F1A6EF31400E24C05 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E691061A6EF31400E24C05 /* ECSlidingInteractiveTransition.m */; };
-		77E691101A6EF31400E24C05 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E691081A6EF31400E24C05 /* ECSlidingSegue.m */; };
-		77E691111A6EF31400E24C05 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E6910A1A6EF31400E24C05 /* ECSlidingViewController.m */; };
-		77E691121A6EF31400E24C05 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E6910C1A6EF31400E24C05 /* UIViewController+ECSlidingViewController.m */; };
 		77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E691131A6EF34E00E24C05 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,19 +43,6 @@
 		772D5EAB1A6461F300279AD0 /* NATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATests.swift; sourceTree = "<group>"; };
 		77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		77E691001A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
-		77E691011A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
-		77E691021A6EF31400E24C05 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
-		77E691031A6EF31400E24C05 /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingAnimationController.m; sourceTree = "<group>"; };
-		77E691041A6EF31400E24C05 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
-		77E691051A6EF31400E24C05 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
-		77E691061A6EF31400E24C05 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
-		77E691071A6EF31400E24C05 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingSegue.h; sourceTree = "<group>"; };
-		77E691081A6EF31400E24C05 /* ECSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingSegue.m; sourceTree = "<group>"; };
-		77E691091A6EF31400E24C05 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
-		77E6910A1A6EF31400E24C05 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
-		77E6910B1A6EF31400E24C05 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
-		77E6910C1A6EF31400E24C05 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
 		77E691131A6EF34E00E24C05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,7 +87,7 @@
 		772D5E8F1A6461F300279AD0 /* NA */ = {
 			isa = PBXGroup;
 			children = (
-				77E690FF1A6EF2FF00E24C05 /* ECSlidingViewController */,
+				FA0FCDF51A6F27110026B63F /* JSON */,
 				772D5E921A6461F300279AD0 /* AppDelegate.swift */,
 				772D5E971A6461F300279AD0 /* ViewController.swift */,
 				772D5E991A6461F300279AD0 /* Main.storyboard */,
@@ -145,24 +126,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		77E690FF1A6EF2FF00E24C05 /* ECSlidingViewController */ = {
+		FA0FCDF51A6F27110026B63F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				77E691001A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.h */,
-				77E691011A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.m */,
-				77E691021A6EF31400E24C05 /* ECSlidingAnimationController.h */,
-				77E691031A6EF31400E24C05 /* ECSlidingAnimationController.m */,
-				77E691041A6EF31400E24C05 /* ECSlidingConstants.h */,
-				77E691051A6EF31400E24C05 /* ECSlidingInteractiveTransition.h */,
-				77E691061A6EF31400E24C05 /* ECSlidingInteractiveTransition.m */,
-				77E691071A6EF31400E24C05 /* ECSlidingSegue.h */,
-				77E691081A6EF31400E24C05 /* ECSlidingSegue.m */,
-				77E691091A6EF31400E24C05 /* ECSlidingViewController.h */,
-				77E6910A1A6EF31400E24C05 /* ECSlidingViewController.m */,
-				77E6910B1A6EF31400E24C05 /* UIViewController+ECSlidingViewController.h */,
-				77E6910C1A6EF31400E24C05 /* UIViewController+ECSlidingViewController.m */,
 			);
-			name = ECSlidingViewController;
+			name = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,16 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				772D5E981A6461F300279AD0 /* ViewController.swift in Sources */,
-				77E691111A6EF31400E24C05 /* ECSlidingViewController.m in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
-				77E691101A6EF31400E24C05 /* ECSlidingSegue.m in Sources */,
 				772D5E931A6461F300279AD0 /* AppDelegate.swift in Sources */,
 				77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */,
-				77E6910F1A6EF31400E24C05 /* ECSlidingInteractiveTransition.m in Sources */,
-				77E6910E1A6EF31400E24C05 /* ECSlidingAnimationController.m in Sources */,
 				77E690FE1A6EE81400E24C05 /* HomeTableViewController.swift in Sources */,
-				77E6910D1A6EF31400E24C05 /* ECPercentDrivenInteractiveTransition.m in Sources */,
-				77E691121A6EF31400E24C05 /* UIViewController+ECSlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
