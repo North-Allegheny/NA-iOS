@@ -24,6 +24,9 @@
 		FA0FCE041A6F275A0026B63F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCDFE1A6F275A0026B63F /* SBJsonParser.m */; };
 		FA0FCE051A6F275A0026B63F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCE001A6F275A0026B63F /* SBJsonWriter.m */; };
 		FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */; };
+		FA850D061A707410008E3585 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA850D051A707410008E3585 /* Security.framework */; };
+		FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA850D091A70745C008E3585 /* SSKeychain.m */; };
+		FA850D0D1A70745C008E3585 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FA850D0B1A70745C008E3585 /* SSKeychainQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,11 @@
 		FA0FCE061A6F29F50026B63F /* GoogleLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleLoginApi.h; sourceTree = "<group>"; };
 		FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleLoginApi.m; sourceTree = "<group>"; };
 		FA0FCE091A6F2A820026B63F /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA850D051A707410008E3585 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA850D081A70745C008E3585 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		FA850D091A70745C008E3585 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		FA850D0A1A70745C008E3585 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		FA850D0B1A70745C008E3585 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA850D061A707410008E3585 /* Security.framework in Frameworks */,
 				77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */,
 				A8D4E94EC9612349EE8CD74D /* libPods.a in Frameworks */,
 			);
@@ -114,6 +123,7 @@
 		772D5E8F1A6461F300279AD0 /* NA */ = {
 			isa = PBXGroup;
 			children = (
+				FA850D071A70743A008E3585 /* SSKeychain */,
 				FA0FCDF51A6F27110026B63F /* JSON */,
 				772D5E921A6461F300279AD0 /* AppDelegate.swift */,
 				772D5E971A6461F300279AD0 /* ViewController.swift */,
@@ -159,6 +169,7 @@
 		9707A7588AD8A7FAF81AF216 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA850D051A707410008E3585 /* Security.framework */,
 				A89B3690071A1F31CC80F1D4 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -189,6 +200,17 @@
 				FA0FCE001A6F275A0026B63F /* SBJsonWriter.m */,
 			);
 			name = JSON;
+			sourceTree = "<group>";
+		};
+		FA850D071A70743A008E3585 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				FA850D081A70745C008E3585 /* SSKeychain.h */,
+				FA850D091A70745C008E3585 /* SSKeychain.m */,
+				FA850D0A1A70745C008E3585 /* SSKeychainQuery.h */,
+				FA850D0B1A70745C008E3585 /* SSKeychainQuery.m */,
+			);
+			name = SSKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,11 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA850D0D1A70745C008E3585 /* SSKeychainQuery.m in Sources */,
 				772D5E981A6461F300279AD0 /* ViewController.swift in Sources */,
 				FA0FCE051A6F275A0026B63F /* SBJsonWriter.m in Sources */,
 				FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */,
 				FA0FCE031A6F275A0026B63F /* SBJsonBase.m in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
+				FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */,
 				772D5E931A6461F300279AD0 /* AppDelegate.swift in Sources */,
 				77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */,
 				FA0FCE011A6F275A0026B63F /* NSObject+SBJSON.m in Sources */,
