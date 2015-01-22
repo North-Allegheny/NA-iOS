@@ -7,8 +7,14 @@
 //
 
 #import "GoogleLoginApi.h"
+#import "GAI.h"
 
 @implementation GoogleLoginApi
+
+-(void)test{
+    id test = [[GAI sharedInstance] defaultTracker];
+    
+}
 
 @end
 /*
