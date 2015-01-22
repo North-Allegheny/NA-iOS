@@ -11,3 +11,13 @@
 @interface GoogleLoginApi : NSObject
 
 @end
+/*
+ @interface ATLoginViewController : UIViewController<UIWebViewDelegate>{
+ IBOutlet UIWebView *webview;
+ NSMutableData *receivedData;
+ }
+ @property (strong, nonatomic) IBOutlet UIWebView *webview;
+ @property (nonatomic, retain) NSString *isLogin;
+ @property (assign, nonatomic) Boolean isReader;
+ -(void)showNewView;
+*/
