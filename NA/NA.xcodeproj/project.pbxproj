@@ -14,6 +14,7 @@
 		772D5E9D1A6461F300279AD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772D5E9C1A6461F300279AD0 /* Images.xcassets */; };
 		772D5EA01A6461F300279AD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */; };
 		772D5EAC1A6461F300279AD0 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5EAB1A6461F300279AD0 /* NATests.swift */; };
+		774C43491A800E3B0047696D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C43481A800E3B0047696D /* libAdIdAccess.a */; };
 		77E690FC1A6EE7F800E24C05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */; };
 		77E690FE1A6EE81400E24C05 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */; };
 		77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E691131A6EF34E00E24C05 /* QuartzCore.framework */; };
@@ -32,7 +33,6 @@
 		FAAB5AA11A71AD4D00A87730 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AA01A71AD4D00A87730 /* libz.dylib */; };
 		FAAB5AAE1A71AFB400A87730 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AAD1A71AFB400A87730 /* libGoogleAnalyticsServices.a */; };
 		FAAB5AB01A71AFDC00A87730 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AAF1A71AFDC00A87730 /* libsqlite3.0.dylib */; };
-		FAAB5AB21A71B05500A87730 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AB11A71B05500A87730 /* libAdIdAccess.a */; };
 		FAAB5AB41A71B09400A87730 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AB31A71B09400A87730 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +60,7 @@
 		772D5EA51A6461F300279AD0 /* NATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		772D5EAA1A6461F300279AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772D5EAB1A6461F300279AD0 /* NATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATests.swift; sourceTree = "<group>"; };
+		774C43481A800E3B0047696D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
 		77E690FB1A6EE7F800E24C05 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		77E690FD1A6EE81400E24C05 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		77E691131A6EF34E00E24C05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -98,7 +99,6 @@
 		FAAB5AAB1A71AF9500A87730 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../../../Downloads/GoogleAnalyticsServicesiOS_3.10/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		FAAB5AAD1A71AFB400A87730 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		FAAB5AAF1A71AFDC00A87730 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		FAAB5AB11A71B05500A87730 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = ../../../../Downloads/GoogleAnalyticsServicesiOS_3.10/libAdIdAccess.a; sourceTree = "<group>"; };
 		FAAB5AB31A71B09400A87730 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -112,9 +112,9 @@
 				FAAB5AA11A71AD4D00A87730 /* libz.dylib in Frameworks */,
 				FAAB5A9F1A71AD4200A87730 /* SystemConfiguration.framework in Frameworks */,
 				FAAB5A9D1A71AD3700A87730 /* CoreData.framework in Frameworks */,
-				FAAB5AB21A71B05500A87730 /* libAdIdAccess.a in Frameworks */,
 				FAAB5AAE1A71AFB400A87730 /* libGoogleAnalyticsServices.a in Frameworks */,
 				FA850D061A707410008E3585 /* Security.framework in Frameworks */,
+				774C43491A800E3B0047696D /* libAdIdAccess.a in Frameworks */,
 				77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */,
 				A8D4E94EC9612349EE8CD74D /* libPods.a in Frameworks */,
 			);
@@ -133,7 +133,7 @@
 		772D5E841A6461F300279AD0 = {
 			isa = PBXGroup;
 			children = (
-				FAAB5AB11A71B05500A87730 /* libAdIdAccess.a */,
+				774C43481A800E3B0047696D /* libAdIdAccess.a */,
 				FAAB5AAD1A71AFB400A87730 /* libGoogleAnalyticsServices.a */,
 				77E691131A6EF34E00E24C05 /* QuartzCore.framework */,
 				772D5E8F1A6461F300279AD0 /* NA */,
