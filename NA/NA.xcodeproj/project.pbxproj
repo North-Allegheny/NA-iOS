@@ -156,7 +156,7 @@
 		772D5E8F1A6461F300279AD0 /* NA */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5A921A71ACE600A87730 /* Goolge Analytics */,
+				FAAB5A921A71ACE600A87730 /* Google Analytics */,
 				FA850D071A70743A008E3585 /* SSKeychain */,
 				FA0FCDF51A6F27110026B63F /* JSON */,
 				772D5E921A6461F300279AD0 /* AppDelegate.swift */,
@@ -253,7 +253,7 @@
 			name = SSKeychain;
 			sourceTree = "<group>";
 		};
-		FAAB5A921A71ACE600A87730 /* Goolge Analytics */ = {
+		FAAB5A921A71ACE600A87730 /* Google Analytics */ = {
 			isa = PBXGroup;
 			children = (
 				FAAB5AA21A71AF1D00A87730 /* GAI.h */,
@@ -266,7 +266,7 @@
 				FAAB5AA91A71AF1D00A87730 /* GAITrackedViewController.h */,
 				FAAB5AAA1A71AF1D00A87730 /* GAITracker.h */,
 			);
-			name = "Goolge Analytics";
+			name = "Google Analytics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
