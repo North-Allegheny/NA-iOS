@@ -40,15 +40,17 @@ class MenuTableViewController: UITableViewController {
         return menuItems.count
     }
 
-    /*
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)-> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("menuViewCell", forIndexPath: indexPath) as MenuTableViewCell
+        let index = indexPath.row
+        cell.menuTitle.text = menuItems[index]
+        
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
