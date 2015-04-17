@@ -15,11 +15,6 @@
 		774C43491A800E3B0047696D /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C43481A800E3B0047696D /* libAdIdAccess.a */; };
 		77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E691131A6EF34E00E24C05 /* QuartzCore.framework */; };
 		A8D4E94EC9612349EE8CD74D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89B3690071A1F31CC80F1D4 /* libPods.a */; };
-		FA0FCE011A6F275A0026B63F /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCDF81A6F275A0026B63F /* NSObject+SBJSON.m */; };
-		FA0FCE021A6F275A0026B63F /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCDFA1A6F275A0026B63F /* NSString+SBJSON.m */; };
-		FA0FCE031A6F275A0026B63F /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCDFC1A6F275A0026B63F /* SBJsonBase.m */; };
-		FA0FCE041A6F275A0026B63F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCDFE1A6F275A0026B63F /* SBJsonParser.m */; };
-		FA0FCE051A6F275A0026B63F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCE001A6F275A0026B63F /* SBJsonWriter.m */; };
 		FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */; };
 		FA850D061A707410008E3585 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA850D051A707410008E3585 /* Security.framework */; };
 		FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA850D091A70745C008E3585 /* SSKeychain.m */; };
@@ -63,17 +58,6 @@
 		774C43481A800E3B0047696D /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
 		77E691131A6EF34E00E24C05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A89B3690071A1F31CC80F1D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA0FCDF61A6F275A0026B63F /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		FA0FCDF71A6F275A0026B63F /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		FA0FCDF81A6F275A0026B63F /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		FA0FCDF91A6F275A0026B63F /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		FA0FCDFA1A6F275A0026B63F /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		FA0FCDFB1A6F275A0026B63F /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		FA0FCDFC1A6F275A0026B63F /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		FA0FCDFD1A6F275A0026B63F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		FA0FCDFE1A6F275A0026B63F /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		FA0FCDFF1A6F275A0026B63F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		FA0FCE001A6F275A0026B63F /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		FA0FCE061A6F29F50026B63F /* GoogleLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleLoginApi.h; sourceTree = "<group>"; };
 		FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleLoginApi.m; sourceTree = "<group>"; };
 		FA0FCE091A6F2A820026B63F /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -167,7 +151,6 @@
 				FA8690BD1AE1B59800728C22 /* Menu View Controllers */,
 				FAAB5A921A71ACE600A87730 /* Google Analytics */,
 				FA850D071A70743A008E3585 /* SSKeychain */,
-				FA0FCDF51A6F27110026B63F /* JSON */,
 				772D5E921A6461F300279AD0 /* AppDelegate.swift */,
 				772D5E9C1A6461F300279AD0 /* Images.xcassets */,
 				772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */,
@@ -228,24 +211,6 @@
 				39C6CEB666F8142B9F3B5DB1 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FA0FCDF51A6F27110026B63F /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				FA0FCDF61A6F275A0026B63F /* JSON.h */,
-				FA0FCDF71A6F275A0026B63F /* NSObject+SBJSON.h */,
-				FA0FCDF81A6F275A0026B63F /* NSObject+SBJSON.m */,
-				FA0FCDF91A6F275A0026B63F /* NSString+SBJSON.h */,
-				FA0FCDFA1A6F275A0026B63F /* NSString+SBJSON.m */,
-				FA0FCDFB1A6F275A0026B63F /* SBJsonBase.h */,
-				FA0FCDFC1A6F275A0026B63F /* SBJsonBase.m */,
-				FA0FCDFD1A6F275A0026B63F /* SBJsonParser.h */,
-				FA0FCDFE1A6F275A0026B63F /* SBJsonParser.m */,
-				FA0FCDFF1A6F275A0026B63F /* SBJsonWriter.h */,
-				FA0FCE001A6F275A0026B63F /* SBJsonWriter.m */,
-			);
-			name = JSON;
 			sourceTree = "<group>";
 		};
 		FA850D071A70743A008E3585 /* SSKeychain */ = {
@@ -435,18 +400,13 @@
 				FA850D0D1A70745C008E3585 /* SSKeychainQuery.m in Sources */,
 				FA8690B61AE1B4AA00728C22 /* MenuViewController.m in Sources */,
 				FA8690BA1AE1B56200728C22 /* HomeViewController.swift in Sources */,
-				FA0FCE051A6F275A0026B63F /* SBJsonWriter.m in Sources */,
 				FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */,
-				FA0FCE031A6F275A0026B63F /* SBJsonBase.m in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
 				FA8690B31AE1B47D00728C22 /* NavigationController.m in Sources */,
 				FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */,
 				772D5E931A6461F300279AD0 /* AppDelegate.swift in Sources */,
 				FA8690BC1AE1B58200728C22 /* SecondViewController.swift in Sources */,
 				FA8690B01AE1B42900728C22 /* RunningRootViewController.m in Sources */,
-				FA0FCE011A6F275A0026B63F /* NSObject+SBJSON.m in Sources */,
-				FA0FCE041A6F275A0026B63F /* SBJsonParser.m in Sources */,
-				FA0FCE021A6F275A0026B63F /* NSString+SBJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
