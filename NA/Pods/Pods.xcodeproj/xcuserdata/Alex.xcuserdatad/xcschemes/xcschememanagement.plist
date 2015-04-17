@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ECSlidingViewController.xcscheme</key>
+		<key>Pods-REFrostedViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>633AEB9D791211050D48940A</key>
+		<key>3A50EF31ED66F89EF0A28974</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BEB1480DF6AD1FA23BB66201</key>
+		<key>97E98197033AAB7F70065176</key>
 		<dict>
 			<key>primary</key>
 			<true/>
