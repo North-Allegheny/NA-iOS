@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func viewDidAppear(animated: Bool) {
         if isLoggedIn(){
+            performSegueWithIdentifier("isLoggedIn", sender: self)
+        }
+        else{
             performSegueWithIdentifier("login", sender: self)
         }
     }
@@ -24,8 +28,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func isLoggedIn()->Bool{
-        return true
+        return false
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {

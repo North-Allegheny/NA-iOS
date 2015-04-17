@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -52,11 +52,17 @@
                         </constraints>
                     </view>
                     <connections>
+<<<<<<< Updated upstream
                         <segue destination="r2t-CC-i4u" kind="presentation" identifier="login" id="NKY-7f-O9c"/>
+=======
+                        <segue destination="VOi-65-hyA" kind="presentation" identifier="isLoggedIn" animates="NO" id="UYn-Wv-xEv"/>
+                        <segue destination="Gf3-LG-NzX" kind="show" identifier="login" id="OeJ-RX-1Bi"/>
+>>>>>>> Stashed changes
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="165" y="136"/>
         </scene>
         <!--Sliding View Controller-->
         <scene sceneID="JZN-MS-KK7">
@@ -178,6 +184,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhg-a9-wYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888" y="1197"/>
+        </scene>
+        <!--Google Login Api-->
+        <scene sceneID="vwV-In-MXC">
+            <objects>
+                <viewController id="Gf3-LG-NzX" customClass="GoogleLoginApi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ob2-MJ-B0h"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJD-rb-d4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r04-PS-UhC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1R-AI-S2O">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="h1R-AI-S2O" secondAttribute="centerY" id="DIr-Ol-mTu"/>
+                            <constraint firstAttribute="centerX" secondItem="h1R-AI-S2O" secondAttribute="centerX" id="Xiw-Er-S1u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="h1R-AI-S2O" id="NmC-vH-UAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXI-mM-0GV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="950"/>
         </scene>
     </scenes>
 </document>

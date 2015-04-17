@@ -12,3 +12,4 @@
 
 #endif
 #import "GAI.h"
+#import "GoogleLoginApi.h"

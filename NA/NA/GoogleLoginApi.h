@@ -6,18 +6,15 @@
 //  Copyright (c) 2015 NA. All rights reserved.
 //
 
-@import Foundation;
+@import UIKit;
 
-@interface GoogleLoginApi : NSObject
+@interface GoogleLoginApi : UIViewController<UIWebViewDelegate>{
+    NSMutableData *receivedData;
+    IBOutlet UIWebView *webview;
+}
+@property (strong, nonatomic) IBOutlet UIWebView *webview;
+@property (nonatomic, retain) NSString *isLogin;
+@property (assign, nonatomic) Boolean isReader;
+-(void)showNewView;
 
 @end
-/*
- @interface ATLoginViewController : UIViewController<UIWebViewDelegate>{
- IBOutlet UIWebView *webview;
- NSMutableData *receivedData;
- }
- @property (strong, nonatomic) IBOutlet UIWebView *webview;
- @property (nonatomic, retain) NSString *isLogin;
- @property (assign, nonatomic) Boolean isReader;
- -(void)showNewView;
-*/
