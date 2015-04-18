@@ -1,13 +1,10 @@
 PODS:
   - REFrostedViewController (2.4.8)
-  - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
   - REFrostedViewController (~> 2.4)
-  - SwiftyJSON (>= 2.2)
 
 SPEC CHECKSUMS:
   REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
-  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 
 COCOAPODS: 0.35.0

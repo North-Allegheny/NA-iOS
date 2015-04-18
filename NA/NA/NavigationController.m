@@ -6,6 +6,11 @@
 //  Copyright (c) 2015 NA. All rights reserved.
 //
 
+#define themeColor [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:1.0f]
+#define themeColorTransparent [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:0.6f]
+#define themeColorNight [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:1.0f]
+#define themeColorNightTransparent [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:0.6f]
+
 #import "NavigationController.h"
 
 @interface NavigationController ()
@@ -18,6 +23,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognized:)]];
+    UINavigationBar *bar = [self.navigationController navigationBar];
+    [bar setTintColor:themeColorTransparent];
+    
 }
 
 - (void)didReceiveMemoryWarning {

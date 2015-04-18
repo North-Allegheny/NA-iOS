@@ -10,15 +10,18 @@ import UIKit
 
 class HomeViewController: UITableViewController {
 
+    @IBOutlet var menuButton: UIBarButtonItem!
     @IBAction func showMenu(sender: AnyObject) {
         //dismiss the keyboard
         self.view.endEditing(true)
         self.frostedViewController.view.endEditing(true)
         //show the menu
         self.frostedViewController.presentMenuViewController()
+        println("width:\(menuButton.width)")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

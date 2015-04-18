@@ -31,6 +31,14 @@
 		FAAB5AAE1A71AFB400A87730 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AAD1A71AFB400A87730 /* libGoogleAnalyticsServices.a */; };
 		FAAB5AB01A71AFDC00A87730 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AAF1A71AFDC00A87730 /* libsqlite3.0.dylib */; };
 		FAAB5AB41A71B09400A87730 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAB5AB31A71B09400A87730 /* AdSupport.framework */; };
+		FAD4895B1AE1DDE6007071ED /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD489521AE1DDE6007071ED /* NSObject+SBJSON.m */; };
+		FAD4895C1AE1DDE6007071ED /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD489541AE1DDE6007071ED /* NSString+SBJSON.m */; };
+		FAD4895D1AE1DDE6007071ED /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD489561AE1DDE6007071ED /* SBJsonBase.m */; };
+		FAD4895E1AE1DDE6007071ED /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD489581AE1DDE6007071ED /* SBJsonParser.m */; };
+		FAD4895F1AE1DDE6007071ED /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4895A1AE1DDE6007071ED /* SBJsonWriter.m */; };
+		FAD489611AE1DE42007071ED /* Night.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD489601AE1DE42007071ED /* Night.swift */; };
+		FAD489631AE1E674007071ED /* credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAD489621AE1E674007071ED /* credits.rtf */; };
+		FADCE12A1AE1D9670042C6CD /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE1291AE1D9670042C6CD /* EDSunriseSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,21 @@
 		FAAB5AAD1A71AFB400A87730 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		FAAB5AAF1A71AFDC00A87730 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		FAAB5AB31A71B09400A87730 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FAD489501AE1DDE6007071ED /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		FAD489511AE1DDE6007071ED /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		FAD489521AE1DDE6007071ED /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		FAD489531AE1DDE6007071ED /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		FAD489541AE1DDE6007071ED /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		FAD489551AE1DDE6007071ED /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		FAD489561AE1DDE6007071ED /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		FAD489571AE1DDE6007071ED /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		FAD489581AE1DDE6007071ED /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		FAD489591AE1DDE6007071ED /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		FAD4895A1AE1DDE6007071ED /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FAD489601AE1DE42007071ED /* Night.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Night.swift; sourceTree = "<group>"; };
+		FAD489621AE1E674007071ED /* credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = credits.rtf; sourceTree = "<group>"; };
+		FADCE1281AE1D9600042C6CD /* EDSunriseSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDSunriseSet.h; sourceTree = "<group>"; };
+		FADCE1291AE1D9670042C6CD /* EDSunriseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSunriseSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +170,9 @@
 		772D5E8F1A6461F300279AD0 /* NA */ = {
 			isa = PBXGroup;
 			children = (
+				FADCE1271AE1D9550042C6CD /* Third Party */,
 				FA8690BE1AE1B5B000728C22 /* View Controllers */,
 				FA8690BD1AE1B59800728C22 /* Menu View Controllers */,
-				FAAB5A921A71ACE600A87730 /* Google Analytics */,
-				FA850D071A70743A008E3585 /* SSKeychain */,
 				772D5E921A6461F300279AD0 /* AppDelegate.swift */,
 				772D5E9C1A6461F300279AD0 /* Images.xcassets */,
 				772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */,
@@ -160,6 +182,8 @@
 				FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */,
 				FA0FCE091A6F2A820026B63F /* NA-Bridging-Header.h */,
 				FA8690AC1AE1B2E700728C22 /* iPhone-Storyboard.storyboard */,
+				FAD489601AE1DE42007071ED /* Night.swift */,
+				FAD489621AE1E674007071ED /* credits.rtf */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -262,6 +286,44 @@
 			name = "Google Analytics";
 			sourceTree = "<group>";
 		};
+		FAD4894F1AE1DDD9007071ED /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FAD489501AE1DDE6007071ED /* JSON.h */,
+				FAD489511AE1DDE6007071ED /* NSObject+SBJSON.h */,
+				FAD489521AE1DDE6007071ED /* NSObject+SBJSON.m */,
+				FAD489531AE1DDE6007071ED /* NSString+SBJSON.h */,
+				FAD489541AE1DDE6007071ED /* NSString+SBJSON.m */,
+				FAD489551AE1DDE6007071ED /* SBJsonBase.h */,
+				FAD489561AE1DDE6007071ED /* SBJsonBase.m */,
+				FAD489571AE1DDE6007071ED /* SBJsonParser.h */,
+				FAD489581AE1DDE6007071ED /* SBJsonParser.m */,
+				FAD489591AE1DDE6007071ED /* SBJsonWriter.h */,
+				FAD4895A1AE1DDE6007071ED /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		FADCE1261AE1D9410042C6CD /* EDSunriseSet */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE1281AE1D9600042C6CD /* EDSunriseSet.h */,
+				FADCE1291AE1D9670042C6CD /* EDSunriseSet.m */,
+			);
+			name = EDSunriseSet;
+			sourceTree = "<group>";
+		};
+		FADCE1271AE1D9550042C6CD /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4894F1AE1DDD9007071ED /* JSON */,
+				FADCE1261AE1D9410042C6CD /* EDSunriseSet */,
+				FAAB5A921A71ACE600A87730 /* Google Analytics */,
+				FA850D071A70743A008E3585 /* SSKeychain */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +409,7 @@
 				772D5EA01A6461F300279AD0 /* LaunchScreen.xib in Resources */,
 				772D5E9D1A6461F300279AD0 /* Images.xcassets in Resources */,
 				FA8690AD1AE1B2E700728C22 /* iPhone-Storyboard.storyboard in Resources */,
+				FAD489631AE1E674007071ED /* credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +464,19 @@
 				FA8690B61AE1B4AA00728C22 /* MenuViewController.m in Sources */,
 				FA8690BA1AE1B56200728C22 /* HomeViewController.swift in Sources */,
 				FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */,
+				FAD4895E1AE1DDE6007071ED /* SBJsonParser.m in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
 				FA8690B31AE1B47D00728C22 /* NavigationController.m in Sources */,
+				FAD4895D1AE1DDE6007071ED /* SBJsonBase.m in Sources */,
+				FADCE12A1AE1D9670042C6CD /* EDSunriseSet.m in Sources */,
 				FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */,
 				772D5E931A6461F300279AD0 /* AppDelegate.swift in Sources */,
 				FA8690BC1AE1B58200728C22 /* SecondViewController.swift in Sources */,
+				FAD489611AE1DE42007071ED /* Night.swift in Sources */,
+				FAD4895B1AE1DDE6007071ED /* NSObject+SBJSON.m in Sources */,
+				FAD4895C1AE1DDE6007071ED /* NSString+SBJSON.m in Sources */,
 				FA8690B01AE1B42900728C22 /* RunningRootViewController.m in Sources */,
+				FAD4895F1AE1DDE6007071ED /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +594,7 @@
 			baseConfigurationReference = 38120F39EE0693BA272F3274 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = NA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,6 +613,7 @@
 			baseConfigurationReference = 39C6CEB666F8142B9F3B5DB1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = NA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

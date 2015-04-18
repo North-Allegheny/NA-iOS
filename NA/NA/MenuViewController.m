@@ -8,11 +8,20 @@
 
 #define themeColor [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:1.0f]
 #define themeColorTransparent [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:0.6f]
+#define themeColorNight [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:1.0f]
+#define themeColorNightTransparent [UIColor colorWithRed:222/255.0f green:180/255.0f blue:6/255.0f alpha:0.6f]
+
+#define menuBackgroundColor [UIColor clearColor]
+#define menuBackgroundColorNight [UIColor colorWithRed:85/255.0f green:85/255.0f blue:85/255.0f alpha:0.6f]
+#define menuLabelColor [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f]
+#define menuLabelColorNight [UIColor colorWithRed:245/255.0f green:245/255.0f blue:246/255.0f alpha:1.0f]
+#define menuSeperatorColor [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f]
+#define menuSeperatorColorNight [UIColor colorWithRed:140/255.0f green:242/255.0f blue:244/255.0f alpha:1.0f]
 
 #import "MenuViewController.h"
-#import "NA-Swift.h"
 #import "UIViewController+REFrostedViewController.h"
 #import "NavigationController.h"
+#import "NA-Swift.h"
 @interface MenuViewController ()
 
 @end
@@ -22,11 +31,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
+    if(![Night isNight])
+        self.tableView.separatorColor = menuLabelColor;
+    else
+        self.tableView.separatorColor = menuLabelColorNight;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
-    self.tableView.backgroundColor = [UIColor clearColor];
+    if(![Night isNight])
+        self.tableView.backgroundColor = menuBackgroundColor;
+    else
+        self.tableView.backgroundColor = menuBackgroundColorNight;
     self.tableView.tableHeaderView = ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
@@ -34,7 +49,12 @@
         imageView.image = [UIImage imageNamed:@"Logo"];
         imageView.layer.masksToBounds = YES;
         imageView.layer.cornerRadius = 50.0;
-        imageView.layer.borderColor = themeColor.CGColor;
+        
+        
+        if(![Night isNight])
+            imageView.layer.borderColor = themeColor.CGColor;
+        else
+            imageView.layer.borderColor = themeColorNight.CGColor;
         imageView.layer.borderWidth = 3.0f;
         imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
         imageView.layer.shouldRasterize = YES;
@@ -44,7 +64,10 @@
         label.text = @"Alexander Taffe";
         label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
+        if(![Night isNight])
+            label.textColor = menuLabelColor;
+        else
+            label.textColor = menuLabelColorNight;
         [label sizeToFit];
         label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         
@@ -65,7 +88,10 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
+    if(![Night isNight])
+        cell.textLabel.textColor = menuLabelColor;
+    else
+        cell.textLabel.textColor = menuLabelColorNight;
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
 }
 
