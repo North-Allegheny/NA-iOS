@@ -197,10 +197,13 @@
 				FAD489601AE1DE42007071ED /* Night.swift */,
 				FAD489621AE1E674007071ED /* credits.rtf */,
 				95BBD7691AE51E0E008E98E8 /* Constants.swift */,
+<<<<<<< HEAD
 				38D639971AE52B4A0074E448 /* IntroViewController.h */,
 				38D639981AE52B4A0074E448 /* IntroViewController.m */,
 				380A16B11AE5363900ABFC9C /* SetupNavigationController.h */,
 				380A16B21AE5363900ABFC9C /* SetupNavigationController.m */,
+=======
+>>>>>>> origin/master
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -498,9 +501,13 @@
 				FAD4895C1AE1DDE6007071ED /* NSString+SBJSON.m in Sources */,
 				FA8690B01AE1B42900728C22 /* RunningRootViewController.m in Sources */,
 				FAD4895F1AE1DDE6007071ED /* SBJsonWriter.m in Sources */,
+<<<<<<< HEAD
 				38D639991AE52B4A0074E448 /* IntroViewController.m in Sources */,
 				95BBD76A1AE51E0E008E98E8 /* Constants.swift in Sources */,
 				380A16B31AE5363900ABFC9C /* SetupNavigationController.m in Sources */,
+=======
+				95BBD76A1AE51E0E008E98E8 /* Constants.swift in Sources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
