@@ -21,7 +21,10 @@ class HomeViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //let loadingController = UIViewController(nibName: "InitialView", bundle: nil)
+        //self.addChildViewController(loadingController)
+        //self.view.addSubview(loadingController.view)
+        //loadingController.didMoveToParentViewController(self)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

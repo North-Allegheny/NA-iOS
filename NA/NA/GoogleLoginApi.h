@@ -15,6 +15,5 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) NSString *isLogin;
 @property (assign, nonatomic) Boolean isReader;
--(void)showNewView;
 
 @end

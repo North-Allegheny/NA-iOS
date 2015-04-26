@@ -11,8 +11,8 @@
 
 NSString *client_id = @"392109918451-oeag8tnmp4vjbuqkhpqdcpjtcfupiaqm.apps.googleusercontent.com";
 NSString *secret = @"w-MrN0JAfqL0z8_Kx_-vpkTL";
-NSString *callback =  @"http://localhost";;
-NSString *scope = @"https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profilee";
+NSString *callback =  @"http://localhost";
+NSString *scope = @"https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile";
 NSString *visibleactions = @"http://schemas.google.com/AddActivity";
 @interface GoogleLoginApi ()
 
@@ -21,78 +21,20 @@ NSString *visibleactions = @"http://schemas.google.com/AddActivity";
 @implementation GoogleLoginApi
 @synthesize webview,isLogin,isReader;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    webview.delegate = self;
     
+    
+    NSString *url = [NSString stringWithFormat:@"https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=%@&redirect_uri=%@&scope=%@&data-requestvisibleactions=%@",client_id,callback,scope,visibleactions];
+    
+    [webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+    // [indicator startAnimating];
 }
-
-
--(void) showNewView{
-    [self performSegueWithIdentifier:@"login" sender:self];
-}
-
--(NSString *)postRequest:(NSDictionary *)postArguments url:(NSString *)theUrl{
-    
-    NSMutableString *post = [[NSMutableString alloc]init];
-    
-    int counter = 0;
-    for (id key in postArguments) {
-        if(counter + 1 == [postArguments count])
-            [post appendFormat:@"%@=%@",key,postArguments[key]];
-        else
-            [post appendFormat:@"%@=%@&",key,postArguments[key]];
-        counter++;
-    }
-    
-    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-    
-    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
-    
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:theUrl]];
-    [request setHTTPMethod:@"POST"];
-    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setHTTPBody:postData];
-    NSHTTPURLResponse* urlResponse = nil;
-    NSError *error = [[NSError alloc] init];
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
-    NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    NSLog(@"Response Code: %ld", (long)[urlResponse statusCode]);
-    if ([urlResponse statusCode] >= 200 && [urlResponse statusCode] < 300) {
-        NSLog(@"Response: %@", result);
-        
-        return result;
-        
-    }
-    else
-        return nil;
-}
-- (NSString *) getDataFrom:(NSString *)url{
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setHTTPMethod:@"GET"];
-    [request setURL:[NSURL URLWithString:url]];
-    
-    NSError *error = [[NSError alloc] init];
-    NSHTTPURLResponse *responseCode = nil;
-    
-    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
-    
-    if([responseCode statusCode] != 200){
-        NSLog(@"Error getting %@, HTTP status code %i", url, [responseCode statusCode]);
-        return nil;
-    }
-    
-    return [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
-}
-
 
 
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
     //    [indicator startAnimating];
-    NSLog(@"asd");
     if ([[[request URL] host] isEqualToString:@"localhost"]) {
         
         // Extract oauth_verifier from URL query
@@ -148,41 +90,21 @@ NSString *visibleactions = @"http://schemas.google.com/AddActivity";
     NSString *response = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
     SBJsonParser *jResponse = [[SBJsonParser alloc]init];
     NSDictionary *tokenData = [jResponse objectWithString:response];
+    //  WebServiceSocket *dconnection = [[WebServiceSocket alloc] init];
+    //   dconnection.delegate = self;
     
-    [tokenData objectForKey:@"refresh_token"];
-    //if ([SSKeychain allAccounts] != nil) {
-        //[SSKeychain deletePasswordForService:@"google" account:[SSKeychain allAccounts][0]];
-    //}
-    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=%@",[tokenData objectForKey:@"access_token"]];
-    NSString *jsonAccountInfo = [self getDataFrom:url];
-    NSDictionary *decodedAccountInfo = [jResponse objectWithString:jsonAccountInfo];
-    
-   // [SSKeychain setPassword:[tokenData objectForKey:@"access_token"] forService:@"google" account:[decodedAccountInfo objectForKey:@"email"]];
-    
-    //NSLog(@"Original token: %@", [tokenData objectForKey:@"access_token"]);
-    //NSLog(@"Email: %@\nToken: %@",[[SSKeychain allAccounts][0] objectForKey:@"acct"], [SSKeychain passwordForService:@"google" account:[[SSKeychain allAccounts][0] objectForKey:@"acct"]]);
-    
-    //NSLog(@"%@",[self getDataFrom:url]);
-    //WebServiceSocket *dconnection = [[WebServiceSocket alloc] init];
-    // dconnection.delegate = self;
-    
-    //NSString *pdata = [NSString stringWithFormat:@"type=3&token=%@&secret=123&login=%@", [tokenData objectForKey:@"refresh_token"], self.isLogin];
-    //NSString *pdata = [NSString stringWithFormat:@"type=3&token=%@&secret=123&login=%@",[tokenData accessToken.secret,self.isLogin];
+    NSString *pdata = [NSString stringWithFormat:@"type=3&token=%@&secret=123&login=%@", [tokenData objectForKey:@"refresh_token"], self.isLogin];
+    //  NSString *pdata = [NSString stringWithFormat:@"type=3&token=%@&secret=123&login=%@",[tokenData accessToken.secret,self.isLogin];
     //  [dconnection fetch:1 withPostdata:pdata withGetData:@"" isSilent:NO];
     
     
-    
-    //UIAlertView *alertView = [[UIAlertView alloc]
-    //initWithTitle:@"Google Access TOken"
-    //message:pdata
-    //delegate:nil
-    //cancelButtonTitle:@"OK"
-    //otherButtonTitles:nil];
-    //[alertView show];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Google Access TOken"
+                              message:pdata
+                              delegate:nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 #pragma mark - Navigation

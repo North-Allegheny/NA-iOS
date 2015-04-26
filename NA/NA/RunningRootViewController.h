@@ -10,4 +10,6 @@
 #import <REFrostedViewController/REFrostedViewController.h>
 @interface RunningRootViewController : REFrostedViewController
 
+@property CGRect cover;
+
 @end
