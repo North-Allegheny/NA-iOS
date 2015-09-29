@@ -11,8 +11,7 @@
 
 
 #endif
-#import "GAI.h"
-#import "GoogleLoginApi.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 #import "EDSunriseSet.h"
 #import "RunningRootViewController.h"
+#import <Google/SignIn.h>

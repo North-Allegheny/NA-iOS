@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         //set the alpha to 0 so we can animate
         instructionText.alpha = 0.0
-        var instructions:NSMutableAttributedString = NSMutableAttributedString(string: "Welcome\n\nTo begin, please sign in to your Google Apps, Tyler SIS, and Blackboard accounts.")
+        let instructions:NSMutableAttributedString = NSMutableAttributedString(string: "Welcome\n\nTo begin, please sign in to your Google Apps, Tyler SIS, and Blackboard accounts.")
         instructions.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(23), range: NSRange(location: 0,length: 7))
         instructions.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(20), range: NSRange(location: 8,length: instructions.length - 1 - 7))
         instructionText.attributedText = instructions

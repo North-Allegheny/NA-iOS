@@ -42,6 +42,7 @@
 		FAD489631AE1E674007071ED /* credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAD489621AE1E674007071ED /* credits.rtf */; };
 		FADCE12A1AE1D9670042C6CD /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE1291AE1D9670042C6CD /* EDSunriseSet.m */; };
 		FADD263A1BBA2C67002418EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBD7691AE51E0E008E98E8 /* Constants.swift */; };
+		FADD263C1BBA2DEB002418EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FADD263B1BBA2DEB002418EA /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		FAD489621AE1E674007071ED /* credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = credits.rtf; sourceTree = "<group>"; };
 		FADCE1281AE1D9600042C6CD /* EDSunriseSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDSunriseSet.h; sourceTree = "<group>"; };
 		FADCE1291AE1D9670042C6CD /* EDSunriseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSunriseSet.m; sourceTree = "<group>"; };
+		FADD263B1BBA2DEB002418EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		772D5E901A6461F300279AD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FADD263B1BBA2DEB002418EA /* GoogleService-Info.plist */,
 				772D5E911A6461F300279AD0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -382,6 +385,7 @@
 		772D5E851A6461F300279AD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = NA;
@@ -421,6 +425,7 @@
 			files = (
 				772D5EA01A6461F300279AD0 /* LaunchScreen.xib in Resources */,
 				772D5E9D1A6461F300279AD0 /* Images.xcassets in Resources */,
+				FADD263C1BBA2DEB002418EA /* GoogleService-Info.plist in Resources */,
 				FA8690AD1AE1B2E700728C22 /* iPhone-Storyboard.storyboard in Resources */,
 				FAD489631AE1E674007071ED /* credits.rtf in Resources */,
 			);

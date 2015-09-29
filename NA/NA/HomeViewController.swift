@@ -17,7 +17,7 @@ class HomeViewController: UITableViewController {
         self.frostedViewController.view.endEditing(true)
         //show the menu
         self.frostedViewController.presentMenuViewController()
-        println("width:\(menuButton.width)")
+        print("width:\(menuButton.width)", terminator: "")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
