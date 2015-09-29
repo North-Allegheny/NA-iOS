@@ -7,7 +7,6 @@
 //
 
 #import "IntroViewController.h"
-#import "GoogleLoginApi.h"
 
 @interface IntroViewController ()
 
@@ -36,6 +35,5 @@
 */
 
 - (IBAction)login:(id)sender {
-    GoogleLoginApi *temp = [[GoogleLoginApi alloc] init];
 }
 @end

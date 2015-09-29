@@ -17,7 +17,6 @@
 		772D5EA01A6461F300279AD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */; };
 		772D5EAC1A6461F300279AD0 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5EAB1A6461F300279AD0 /* NATests.swift */; };
 		77E691141A6EF34E00E24C05 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E691131A6EF34E00E24C05 /* QuartzCore.framework */; };
-		FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */; };
 		FA1C2BF11AED446100270559 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C2BF01AED446100270559 /* WelcomeViewController.swift */; };
 		FA850D061A707410008E3585 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA850D051A707410008E3585 /* Security.framework */; };
 		FA850D0C1A70745C008E3585 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA850D091A70745C008E3585 /* SSKeychain.m */; };
@@ -75,8 +74,6 @@
 		772D5EAB1A6461F300279AD0 /* NATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATests.swift; sourceTree = "<group>"; };
 		77E691131A6EF34E00E24C05 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		95BBD7691AE51E0E008E98E8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FA0FCE061A6F29F50026B63F /* GoogleLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleLoginApi.h; sourceTree = "<group>"; };
-		FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleLoginApi.m; sourceTree = "<group>"; };
 		FA0FCE091A6F2A820026B63F /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA1C2BF01AED446100270559 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FA850D051A707410008E3585 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -184,8 +181,6 @@
 				772D5E9E1A6461F300279AD0 /* LaunchScreen.xib */,
 				772D5E941A6461F300279AD0 /* NA.xcdatamodeld */,
 				772D5E901A6461F300279AD0 /* Supporting Files */,
-				FA0FCE061A6F29F50026B63F /* GoogleLoginApi.h */,
-				FA0FCE071A6F29F50026B63F /* GoogleLoginApi.m */,
 				FA0FCE091A6F2A820026B63F /* NA-Bridging-Header.h */,
 				FA8690AC1AE1B2E700728C22 /* iPhone-Storyboard.storyboard */,
 				FAD489601AE1DE42007071ED /* Night.swift */,
@@ -496,7 +491,6 @@
 				FA850D0D1A70745C008E3585 /* SSKeychainQuery.m in Sources */,
 				FA8690B61AE1B4AA00728C22 /* MenuViewController.m in Sources */,
 				FA8690BA1AE1B56200728C22 /* HomeViewController.swift in Sources */,
-				FA0FCE081A6F29F50026B63F /* GoogleLoginApi.m in Sources */,
 				FAD4895E1AE1DDE6007071ED /* SBJsonParser.m in Sources */,
 				38D2B7051AE54A3C0073B462 /* initialSplashViewController.swift in Sources */,
 				772D5E961A6461F300279AD0 /* NA.xcdatamodeld in Sources */,
