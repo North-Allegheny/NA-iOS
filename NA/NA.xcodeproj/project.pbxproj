@@ -15,6 +15,7 @@
 		7A07AFAA1BC2970E00158178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A07AFA81BC2970E00158178 /* LaunchScreen.storyboard */; };
 		7A07AFB51BC2970E00158178 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFB41BC2970E00158178 /* NATests.swift */; };
 		7A07AFC01BC2970E00158178 /* NAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFBF1BC2970E00158178 /* NAUITests.swift */; };
+		7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFCD1BC29B9500158178 /* InitialViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		7A07AFBB1BC2970E00158178 /* NAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A07AFBF1BC2970E00158178 /* NAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAUITests.swift; sourceTree = "<group>"; };
 		7A07AFC11BC2970E00158178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A07AFCD1BC29B9500158178 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
 		B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +124,8 @@
 				7A07AFA61BC2970E00158178 /* Assets.xcassets */,
 				7A07AFA81BC2970E00158178 /* LaunchScreen.storyboard */,
 				7A07AFAB1BC2970E00158178 /* Info.plist */,
+				7A07AFCD1BC29B9500158178 /* InitialViewController.swift */,
+				7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 		7A07AF921BC2970E00158178 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "NA App";
 				TargetAttributes = {
@@ -336,6 +342,7 @@
 				7A07AFA21BC2970E00158178 /* SecondViewController.swift in Sources */,
 				7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */,
 				7A07AFA01BC2970E00158178 /* FirstViewController.swift in Sources */,
+				7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +485,13 @@
 			baseConfigurationReference = 1F0B38F385F3806D2BA046BE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NA.NA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NA/NA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -490,10 +500,12 @@
 			baseConfigurationReference = B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NA.NA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NA/NA-Bridging-Header.h";
 			};
 			name = Release;
 		};

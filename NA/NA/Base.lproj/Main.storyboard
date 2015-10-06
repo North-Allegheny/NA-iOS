@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -91,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="2qN-Ez-ow8">
             <objects>
-                <viewController id="Z59-t6-D02" sceneMemberID="viewController">
+                <viewController id="Z59-t6-D02" customClass="InitialViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AEd-4x-wCV"/>
                         <viewControllerLayoutGuide type="bottom" id="Kaj-3C-D04"/>
@@ -111,14 +112,57 @@
                                     <constraint firstAttribute="width" constant="128" id="wyU-5Z-eKz"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-XH-G8h">
+                                <rect key="frame" x="75" y="170" width="450" height="162"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="pWp-NH-D4Q"/>
+                                    <constraint firstAttribute="width" constant="537" id="phx-RS-pEt"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="phx-RS-pEt"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhz-8H-IfE" customClass="GIDSignInButton">
+                                <rect key="frame" x="200" y="340" width="200" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5eV-Hm-v07"/>
+                                    <constraint firstAttribute="width" constant="200" id="5gF-Ra-BiM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YxF-fP-Kyd" firstAttribute="centerX" secondItem="UZr-hH-QHT" secondAttribute="centerX" id="2mK-G2-6i2"/>
+                            <constraint firstItem="Kaj-3C-D04" firstAttribute="top" secondItem="gf9-XH-G8h" secondAttribute="bottom" constant="79" id="GBf-n8-66H"/>
+                            <constraint firstItem="qhz-8H-IfE" firstAttribute="top" secondItem="gf9-XH-G8h" secondAttribute="bottom" constant="20" id="HAC-ID-fbY"/>
                             <constraint firstItem="YxF-fP-Kyd" firstAttribute="centerY" secondItem="UZr-hH-QHT" secondAttribute="centerY" id="VvI-c4-kE2"/>
+                            <constraint firstItem="gf9-XH-G8h" firstAttribute="width" secondItem="UZr-hH-QHT" secondAttribute="width" multiplier="0.75" id="bxX-QZ-YkB"/>
+                            <constraint firstItem="gf9-XH-G8h" firstAttribute="top" secondItem="AEd-4x-wCV" secondAttribute="bottom" constant="150" id="jwO-Vz-gum"/>
+                            <constraint firstItem="qhz-8H-IfE" firstAttribute="centerX" secondItem="UZr-hH-QHT" secondAttribute="centerX" id="pDu-Qk-uVb"/>
+                            <constraint firstItem="gf9-XH-G8h" firstAttribute="centerX" secondItem="UZr-hH-QHT" secondAttribute="centerX" id="pNF-M1-KIK"/>
+                            <constraint firstItem="Kaj-3C-D04" firstAttribute="top" secondItem="qhz-8H-IfE" secondAttribute="bottom" constant="152" id="zOY-ZF-VEH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GBf-n8-66H"/>
+                                <exclude reference="zOY-ZF-VEH"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="googleLoginButtonView" destination="qhz-8H-IfE" id="6vq-kh-7Q8"/>
+                        <outlet property="instructionText" destination="gf9-XH-G8h" id="b7j-PR-PAb"/>
+                        <outlet property="logoImage" destination="YxF-fP-Kyd" id="Q0F-tq-kNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="71j-6d-C82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
