@@ -137,6 +137,11 @@
                                     <constraint firstAttribute="width" constant="200" id="5gF-Ra-BiM"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izM-CR-AAb">
+                                <rect key="frame" x="283" y="447" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Tyler"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

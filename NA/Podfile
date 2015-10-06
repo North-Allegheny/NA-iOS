@@ -5,3 +5,4 @@ use_frameworks!
 pod 'Google/SignIn'
 pod "AFNetworking", "~> 2.0"
 pod 'RealmSwift'
+pod 'SSKeychain'

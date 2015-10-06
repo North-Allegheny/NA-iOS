@@ -50,11 +50,13 @@ PODS:
   - Realm/Headers (0.95.2)
   - RealmSwift (0.95.2):
     - Realm (= 0.95.2)
+  - SSKeychain (1.2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - Google/SignIn
   - RealmSwift
+  - SSKeychain
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
@@ -68,5 +70,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8ed9134debe11719097881711464752900668f10
   Realm: 4c026902041bb39c4bd083ebc5e88f4f17973d72
   RealmSwift: ac7822fe7ab8dca7fa979f4d576793b111d6dce1
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
 
 COCOAPODS: 0.38.2

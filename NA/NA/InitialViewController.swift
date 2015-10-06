@@ -8,13 +8,19 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class InitialViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet var logoImage: UIImageView!
     @IBOutlet var instructionText: UITextView!
     @IBOutlet var googleLoginButtonView: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //connect google button
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        //auto Google sign in if possible
+        GIDSignIn.sharedInstance().signInSilently()
         
         instructionText.alpha = 0.0
         googleLoginButtonView.alpha = 0.0
@@ -28,7 +34,7 @@ class InitialViewController: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning() 
         // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(animated: Bool) {
