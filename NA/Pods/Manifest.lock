@@ -45,11 +45,11 @@ PODS:
   - GoogleSymbolUtilities (1.0.0)
   - GoogleUtilities (1.1.0):
     - GoogleSymbolUtilities (~> 1.0.0)
-  - Realm (0.95.2):
-    - Realm/Headers (= 0.95.2)
-  - Realm/Headers (0.95.2)
-  - RealmSwift (0.95.2):
-    - Realm (= 0.95.2)
+  - Realm (0.95.3):
+    - Realm/Headers (= 0.95.3)
+  - Realm/Headers (0.95.3)
+  - RealmSwift (0.95.3):
+    - Realm (= 0.95.3)
   - SSKeychain (1.2.3)
 
 DEPENDENCIES:
@@ -68,8 +68,8 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7f5436ba32eac6df0b3b40236a9e737edb0b34aa
   GoogleSymbolUtilities: a7b0feed1fe667c8d5e647177938d0ecd62d6948
   GoogleUtilities: 8ed9134debe11719097881711464752900668f10
-  Realm: 4c026902041bb39c4bd083ebc5e88f4f17973d72
-  RealmSwift: ac7822fe7ab8dca7fa979f4d576793b111d6dce1
+  Realm: 55885fa05865344994ad8b56da96669ffa39fbf1
+  RealmSwift: 586df4b5a6d01473d2653b16e9fe7debce4a87ed
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
 
 COCOAPODS: 0.38.2

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import QuartzCore
 
 class InitialViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet var logoImage: UIImageView!
     @IBOutlet var instructionText: UITextView!
     @IBOutlet var googleLoginButtonView: GIDSignInButton!
+    @IBOutlet var tylerLoginButton: UIButton!
+    @IBOutlet var blackboardLoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +25,17 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         //auto Google sign in if possible
         GIDSignIn.sharedInstance().signInSilently()
         
+        tylerLoginButton.layer.borderWidth = 1.0
+        tylerLoginButton.layer.borderColor = UIColor.blueColor().CGColor
+        tylerLoginButton.layer.cornerRadius = 5.0;
+        
+        blackboardLoginButton.layer.borderWidth = 1.0
+        blackboardLoginButton.layer.borderColor = UIColor.blueColor().CGColor
+        blackboardLoginButton.layer.cornerRadius = 5.0
+        
         instructionText.alpha = 0.0
+        tylerLoginButton.alpha = 0.0
+        blackboardLoginButton.alpha = 0.0
         googleLoginButtonView.alpha = 0.0
         let instructions:NSMutableAttributedString = NSMutableAttributedString(string: "Welcome\n\nTo begin, please sign in to your Google Apps, Tyler SIS, and Blackboard accounts.")
         instructions.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(23), range: NSRange(location: 0,length: 7))
@@ -40,11 +53,9 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         //insert into variables
-        let logoWidth = logoImage.frame.size.width
-        let logoHeight = logoImage.frame.size.height
-        let viewWidth = self.view.frame.size.width
-        let viewHeight = self.view.frame.size.height
-        let newX = self.logoImage.frame.minX
+        let logoWidth = logoImage.frame.size.width * (4/3)
+        let logoHeight = logoImage.frame.size.height * (4/3)
+        let newX = self.logoImage.frame.minX - (logoWidth - logoImage.frame.size.width) / 2
         //status bar+navigation bar
         let newY = UIApplication.sharedApplication().statusBarFrame.size.height - 20
         
@@ -56,6 +67,8 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         UIView.animateWithDuration(0.48, delay: 0.5, options: .CurveEaseIn, animations: {
             self.instructionText.alpha = 1.0
             self.googleLoginButtonView.alpha = 1.0
+            self.blackboardLoginButton.alpha = 1.0
+            self.tylerLoginButton.alpha = 1.0
             }, completion: nil)
     }
     
