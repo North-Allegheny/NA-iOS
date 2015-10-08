@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AF9D1BC2970E00158178 /* AppDelegate.swift */; };
-		7A07AFA01BC2970E00158178 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AF9F1BC2970E00158178 /* FirstViewController.swift */; };
-		7A07AFA21BC2970E00158178 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFA11BC2970E00158178 /* SecondViewController.swift */; };
 		7A07AFA51BC2970E00158178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A07AFA31BC2970E00158178 /* Main.storyboard */; };
 		7A07AFA71BC2970E00158178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A07AFA61BC2970E00158178 /* Assets.xcassets */; };
 		7A07AFAA1BC2970E00158178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A07AFA81BC2970E00158178 /* LaunchScreen.storyboard */; };
@@ -18,6 +16,8 @@
 		7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFCD1BC29B9500158178 /* InitialViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7A5EA2D31BC3EA5400657BC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		7A5EA2D51BC3EDF000657BC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */; };
+		7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A041BC68D0700346DBD /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,6 @@
 		3C089F1017D7782A451222DD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A07AF9A1BC2970E00158178 /* NA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A07AF9D1BC2970E00158178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A07AF9F1BC2970E00158178 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7A07AFA11BC2970E00158178 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7A07AFA41BC2970E00158178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A07AFA61BC2970E00158178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A07AFA91BC2970E00158178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +57,8 @@
 		7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A6D3A041BC68D0700346DBD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
 		B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,8 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				7A07AF9D1BC2970E00158178 /* AppDelegate.swift */,
-				7A07AF9F1BC2970E00158178 /* FirstViewController.swift */,
-				7A07AFA11BC2970E00158178 /* SecondViewController.swift */,
 				7A07AFA31BC2970E00158178 /* Main.storyboard */,
 				7A07AFA61BC2970E00158178 /* Assets.xcassets */,
 				7A07AFA81BC2970E00158178 /* LaunchScreen.storyboard */,
@@ -133,6 +131,8 @@
 				7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */,
 				7A07AFCD1BC29B9500158178 /* InitialViewController.swift */,
 				7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */,
+				7A6D3A041BC68D0700346DBD /* HomeViewController.swift */,
+				7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -347,9 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A07AFA21BC2970E00158178 /* SecondViewController.swift in Sources */,
+				7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */,
+				7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */,
 				7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */,
-				7A07AFA01BC2970E00158178 /* FirstViewController.swift in Sources */,
 				7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
