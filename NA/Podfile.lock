@@ -1,4 +1,5 @@
 PODS:
+  - 1PasswordExtension (1.6.1)
   - AFNetworking (2.6.0):
     - AFNetworking/NSURLConnection (= 2.6.0)
     - AFNetworking/NSURLSession (= 2.6.0)
@@ -37,7 +38,7 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
   - GoogleNetworkingUtilities (1.0.0):
     - GoogleSymbolUtilities (~> 1.0)
-  - GoogleSignIn (2.3.1):
+  - GoogleSignIn (2.3.2):
     - GoogleAppUtilities (~> 1.0)
     - GoogleAuthUtilities (~> 1.0)
     - GoogleNetworkingUtilities (~> 1.0)
@@ -53,23 +54,25 @@ PODS:
   - SSKeychain (1.2.3)
 
 DEPENDENCIES:
+  - 1PasswordExtension (~> 1.6.1)
   - AFNetworking (~> 2.0)
   - Google/SignIn
   - RealmSwift
   - SSKeychain
 
 SPEC CHECKSUMS:
+  1PasswordExtension: 42b79b7ac6d8e7468b22b7a651fc0b445bcdbd3e
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   Google: ec6c7729037b9579e52a4880ba06eb38ddb1de68
   GoogleAppUtilities: c01c6a5671e9da8b9d690fdaec5959d6c2aac699
   GoogleAuthUtilities: 049ffd3a297cdffd271451b82fd4e75304f15ef3
   GoogleInterchangeUtilities: fe088bea8c936218e52324a004d279c4491b9d65
   GoogleNetworkingUtilities: 292992ab31b7b4ba32809a0e8b40e324cdfb2c0c
-  GoogleSignIn: 7f5436ba32eac6df0b3b40236a9e737edb0b34aa
+  GoogleSignIn: bfeffe8bbb5f5b377d9cc0d36e97e5f4758cfec4
   GoogleSymbolUtilities: a7b0feed1fe667c8d5e647177938d0ecd62d6948
   GoogleUtilities: 8ed9134debe11719097881711464752900668f10
   Realm: 55885fa05865344994ad8b56da96669ffa39fbf1
   RealmSwift: 586df4b5a6d01473d2653b16e9fe7debce4a87ed
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
