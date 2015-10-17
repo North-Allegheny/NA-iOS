@@ -9,11 +9,28 @@
 import UIKit
 
 class HomeViewController: UITableViewController {
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+            ).instantiateWithOwner(nil, options: nil)[0] as? UIView
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = UIImage(named: "Transparent Logo")
-        self.navigationController!.navigationBar.setBackgroundImage(image, forBarMetrics: .Default)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        let headerView = HomeViewController.loadFromNibNamed("HomeHeader") as! HomeHeaderView
+        
+        let headerViewImageInitial = CIImage(image: UIImage(named: "Home Header")!)
+        let blurFilter = CIFilter(name: "CIGaussianBlur")
+        blurFilter?.setValue(headerViewImageInitial, forKey: "inputImage")
+        let blurredHeader = UIImage(CIImage: blurFilter?.valueForKey("outputImage") as! CIImage)
+        
+        headerView.coverImage.image = blurredHeader
+        
+        
+        self.tableView.tableHeaderView = headerView
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -93,4 +110,8 @@ class HomeViewController: UITableViewController {
     }
     */
 
+}
+
+extension UIView {
+    
 }
