@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,15 +13,15 @@
 		7A07AFAA1BC2970E00158178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A07AFA81BC2970E00158178 /* LaunchScreen.storyboard */; };
 		7A07AFB51BC2970E00158178 /* NATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFB41BC2970E00158178 /* NATests.swift */; };
 		7A07AFC01BC2970E00158178 /* NAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFBF1BC2970E00158178 /* NAUITests.swift */; };
-		7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFCD1BC29B9500158178 /* InitialViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7A5EA2D31BC3EA5400657BC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */; settings = {ASSET_TAGS = (); }; };
+		7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFCD1BC29B9500158178 /* InitialViewController.swift */; };
+		7A5EA2D31BC3EA5400657BC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */; };
 		7A5EA2D51BC3EDF000657BC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */; };
-		7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A041BC68D0700346DBD /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A041BC68D0700346DBD /* HomeViewController.swift */; };
+		7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */; };
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; };
-		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; settings = {ASSET_TAGS = (); }; };
-		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
-		FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
+		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; };
+		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; };
+		FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,7 +258,7 @@
 				};
 			};
 			buildConfigurationList = 7A07AF951BC2970E00158178 /* Build configuration list for PBXProject "NA" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (

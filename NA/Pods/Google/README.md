@@ -18,11 +18,11 @@ $ sudo gem install cocoapods
 
 ## Try out an SDK
 
-You can try any of the SDKs with `pod try`. For example, to try the Google Maps
-SDK:
+You can try any of the SDKs with `pod try`. Run the following command and select
+the SDK you are interested in when prompted:
 
 ```
-$ pod try GoogleMaps
+$ pod try Google
 ```
 
 Note that some SDKs may require credentials. More information is available in
