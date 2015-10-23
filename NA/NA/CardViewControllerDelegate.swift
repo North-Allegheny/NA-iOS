@@ -9,7 +9,15 @@
 import Foundation
 
 @objc public protocol CardViewControllerDelegate:NSObjectProtocol{
+    //Data functions
     func numberOfCards()->Int
-    optional func spacingBetweenCards()->Int
-    func cardForIndex(int:index)->CardView
+    func cardForIndex(index:Int)->CardView
+    optional func headerView()->UIView
+    
+    //formatting functions
+    optional func spacingBetweenCards()->Float
+    optional func backgroundColor()->UIColor
+    optional func headerShouldMinimize()->Bool
+    optional func useLightScrollBar()->Bool
+    
 }
