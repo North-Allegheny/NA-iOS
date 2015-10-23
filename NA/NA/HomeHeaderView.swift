@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import FXBlurView
 
 class HomeHeaderView: UIView {
     @IBOutlet var coverImage: UIImageView!
+    var blurView = FXBlurView()
 
     /*
     // Only override drawRect: if you perform custom drawing.

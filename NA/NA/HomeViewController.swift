@@ -49,7 +49,9 @@ class HomeViewController: CardViewController, CardViewControllerDelegate {
     }
     
     func headerView() -> UIView {
-        return NSBundle.mainBundle().loadNibNamed("HomeHeader", owner: nil, options: nil)[0] as! HomeHeaderView
+        let headerView = NSBundle.mainBundle().loadNibNamed("HomeHeader", owner: nil, options: nil)[0] as! HomeHeaderView
+        headerView.blurView.blurRadius = 40.0
+        return headerView
     }
     
 
