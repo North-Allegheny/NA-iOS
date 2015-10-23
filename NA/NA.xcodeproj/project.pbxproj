@@ -20,7 +20,6 @@
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; };
 		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; };
 		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; };
-		FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */; };
 		FAB205571BDABE02002CF973 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB205561BDABE02002CF973 /* CardView.swift */; };
 		FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E721BD9D56F002611BA /* CardViewController.swift */; };
 		FAC21E751BD9D613002611BA /* CardViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */; };
@@ -67,8 +66,6 @@
 		B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
 		FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
-		FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		FA59035D1BD2BA910005ADE7 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		FAB205561BDABE02002CF973 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FAC21E721BD9D56F002611BA /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +133,6 @@
 		7A07AF9C1BC2970E00158178 /* NA */ = {
 			isa = PBXGroup;
 			children = (
-				FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */,
-				FA59035D1BD2BA910005ADE7 /* UIImage+ImageEffects.h */,
 				7A07AF9D1BC2970E00158178 /* AppDelegate.swift */,
 				7A07AFA31BC2970E00158178 /* Main.storyboard */,
 				FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */,
@@ -371,7 +366,6 @@
 				FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */,
 				FAB205571BDABE02002CF973 /* CardView.swift in Sources */,
 				FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */,
-				FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */,
 				FAC21E791BD9D6EA002611BA /* HomeViewController.swift in Sources */,
 				7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */,
 				7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */,
