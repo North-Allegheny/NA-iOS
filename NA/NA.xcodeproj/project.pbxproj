@@ -16,12 +16,14 @@
 		7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07AFCD1BC29B9500158178 /* InitialViewController.swift */; };
 		7A5EA2D31BC3EA5400657BC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */; };
 		7A5EA2D51BC3EDF000657BC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */; };
-		7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A041BC68D0700346DBD /* HomeViewController.swift */; };
 		7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */; };
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; };
 		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; };
 		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; };
 		FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */; };
+		FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E721BD9D56F002611BA /* CardViewController.swift */; };
+		FAC21E751BD9D613002611BA /* CardViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */; };
+		FAC21E791BD9D6EA002611BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E781BD9D6EA002611BA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +62,15 @@
 		7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NA-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7A6D3A041BC68D0700346DBD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
 		B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
 		FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		FA59035C1BD2BA910005ADE7 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		FA59035D1BD2BA910005ADE7 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		FAC21E721BD9D56F002611BA /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FAC21E781BD9D6EA002611BA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +146,10 @@
 				7A5EA2D21BC3EA5400657BC2 /* GoogleService-Info.plist */,
 				7A07AFCD1BC29B9500158178 /* InitialViewController.swift */,
 				7A07AFD31BC2A05A00158178 /* NA-Bridging-Header.h */,
-				7A6D3A041BC68D0700346DBD /* HomeViewController.swift */,
 				7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */,
+				FAC21E721BD9D56F002611BA /* CardViewController.swift */,
+				FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */,
+				FAC21E781BD9D6EA002611BA /* HomeViewController.swift */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -359,11 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6D3A051BC68D0700346DBD /* HomeViewController.swift in Sources */,
+				FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */,
 				FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */,
 				FA59035E1BD2BA910005ADE7 /* UIImage+ImageEffects.m in Sources */,
+				FAC21E791BD9D6EA002611BA /* HomeViewController.swift in Sources */,
 				7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */,
 				7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */,
+				FAC21E751BD9D613002611BA /* CardViewControllerDelegate.swift in Sources */,
 				7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

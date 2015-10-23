@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,15 +10,24 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-sH-Zl2">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home Header" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-sH-Zl2">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zna-py-lmL">
+                    <rect key="frame" x="279" y="31" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="zna-py-lmL" firstAttribute="centerX" secondItem="D5V-sH-Zl2" secondAttribute="centerX" id="2Lz-UR-zXb"/>
                 <constraint firstItem="D5V-sH-Zl2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y05-g5-JL1"/>
+                <constraint firstItem="D5V-sH-Zl2" firstAttribute="top" secondItem="zna-py-lmL" secondAttribute="bottom" constant="-52" id="gIZ-5l-X2O"/>
                 <constraint firstItem="D5V-sH-Zl2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jFq-DY-CQN"/>
                 <constraint firstItem="D5V-sH-Zl2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="uYR-rs-O47"/>
                 <constraint firstItem="D5V-sH-Zl2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="xDp-3g-PDa"/>
@@ -28,4 +37,7 @@
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="Home Header" width="1706" height="960"/>
+    </resources>
 </document>

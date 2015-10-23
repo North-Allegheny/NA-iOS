@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  CardViewController.swift
 //  NA
 //
 //  Created by Alex Taffe on 10/22/15.
@@ -8,23 +8,21 @@
 
 import UIKit
 
-class HomeViewController: CardViewController, CardViewControllerDelegate {
+public class CardViewController: UIViewController {
     
+    weak public var delegate: CardViewControllerDelegate?
+    private var numberOfCards:Int?
     
-
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
+        numberOfCards = delegate?.numberOfCards()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func numberOfCards()->Int{
-        return 3
     }
     
 
