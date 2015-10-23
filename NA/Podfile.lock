@@ -21,6 +21,7 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FXBlurView (1.6.4)
   - Google/Core (1.1.1):
     - GoogleInterchangeUtilities (~> 1.0)
     - GoogleNetworkingUtilities (~> 1.0)
@@ -56,6 +57,7 @@ PODS:
 DEPENDENCIES:
   - 1PasswordExtension (~> 1.6.1)
   - AFNetworking (~> 2.0)
+  - FXBlurView
   - Google/SignIn
   - RealmSwift
   - SSKeychain
@@ -63,6 +65,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   1PasswordExtension: 676a216461ffa9189db66541b5a2465e10ae4743
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   Google: 529a5d8719dff90ea2e7cba5f45302cd359b5456
   GoogleAppUtilities: c01c6a5671e9da8b9d690fdaec5959d6c2aac699
   GoogleAuthUtilities: 049ffd3a297cdffd271451b82fd4e75304f15ef3

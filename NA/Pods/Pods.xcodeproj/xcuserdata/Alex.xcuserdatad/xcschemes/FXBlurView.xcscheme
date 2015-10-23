@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CF53012B8FC51BE6B927D87E'
-               BlueprintName = 'SSKeychain'
+               BlueprintIdentifier = 'AE537F4AD92AA2EA67E8C14D'
+               BlueprintName = 'FXBlurView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SSKeychain.framework'>
+               BuildableName = 'FXBlurView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

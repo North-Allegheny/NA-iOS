@@ -7,3 +7,4 @@ pod "AFNetworking", "~> 2.0"
 pod 'RealmSwift'
 pod 'SSKeychain'
 pod '1PasswordExtension', '~> 1.6.1'
+pod 'FXBlurView'
