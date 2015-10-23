@@ -21,6 +21,7 @@
 		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; };
 		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; };
 		FAB205571BDABE02002CF973 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB205561BDABE02002CF973 /* CardView.swift */; };
+		FAB205591BDAE258002CF973 /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB205581BDAE258002CF973 /* credits.html */; };
 		FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E721BD9D56F002611BA /* CardViewController.swift */; };
 		FAC21E751BD9D613002611BA /* CardViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */; };
 		FAC21E791BD9D6EA002611BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E781BD9D6EA002611BA /* HomeViewController.swift */; };
@@ -67,6 +68,7 @@
 		FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
 		FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		FAB205561BDABE02002CF973 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FAB205581BDAE258002CF973 /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		FAC21E721BD9D56F002611BA /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewControllerDelegate.swift; sourceTree = "<group>"; };
 		FAC21E781BD9D6EA002611BA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				FAC21E741BD9D613002611BA /* CardViewControllerDelegate.swift */,
 				FAB205561BDABE02002CF973 /* CardView.swift */,
 				FAC21E781BD9D6EA002611BA /* HomeViewController.swift */,
+				FAB205581BDAE258002CF973 /* credits.html */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				7A5EA2D31BC3EA5400657BC2 /* GoogleService-Info.plist in Resources */,
 				7A07AFA71BC2970E00158178 /* Assets.xcassets in Resources */,
 				7A07AFA51BC2970E00158178 /* Main.storyboard in Resources */,
+				FAB205591BDAE258002CF973 /* credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

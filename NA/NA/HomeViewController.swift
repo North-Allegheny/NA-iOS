@@ -47,6 +47,11 @@ class HomeViewController: CardViewController, CardViewControllerDelegate {
     func useLightScrollBar() -> Bool {
         return true
     }
+    
+    func headerView() -> UIView {
+        return NSBundle.mainBundle().loadNibNamed("HomeHeader", owner: nil, options: nil)[0] as! HomeHeaderView
+    }
+    
 
     /*
     // MARK: - Navigation

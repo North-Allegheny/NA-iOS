@@ -15,6 +15,7 @@ public class CardViewController: UIViewController {
     private var cards:[CardView]!
     private var scrollView:UIScrollView!
     private var cardSpacing:Float!
+    private var headerView:UIView?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,18 @@ public class CardViewController: UIViewController {
         
         cards = [CardView]()
         numberOfCards = delegate?.numberOfCards()
-        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        
+        if let header = delegate?.headerView?(){
+            headerView = header
+            headerView?.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 200)
+            scrollView = UIScrollView(frame: CGRect(x: 0, y: (headerView?.frame.height)! - UIApplication.sharedApplication().statusBarFrame.height, width: screenWidth, height: screenHeight + UIApplication.sharedApplication().statusBarFrame.height - (headerView?.frame.height)!))
+        }
+        else{
+            scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        }
         scrollView.contentSize = CGSize(width: 0, height: 0)
         self.view.addSubview(scrollView)
+        self.view.addSubview(headerView!)
         
         if let spacing = delegate?.spacingBetweenCards?(){
             cardSpacing = spacing
@@ -63,7 +73,7 @@ public class CardViewController: UIViewController {
         }
         
         let cardX = CGFloat(111/4.0)
-        var currentY = CGFloat(cardSpacing)
+        var currentY = CGFloat(cardSpacing) + scrollView.contentSize.height
         for var i = 0; i < numberOfCards; ++i{
             cards[i].frame = CGRect(x: cardX, y: currentY, width: screenWidth - 111 / 2.0, height: 200)
             currentY += cards[i].frame.height + CGFloat(cardSpacing)

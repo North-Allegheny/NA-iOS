@@ -10,8 +10,8 @@
         <scene sceneID="jc0-FS-RsJ">
             <objects>
                 <navigationController id="aQH-dm-Ijd" customClass="HomeNavigationViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="KBV-SJ-aC8"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="KBV-SJ-aC8"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="q66-bm-dJa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -289,7 +289,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.82745098039215681" green="0.78823529411764703" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.82745098039999998" green="0.78823529410000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.82745098039215681" green="0.78823529411764703" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="aQH-dm-Ijd" kind="relationship" relationship="viewControllers" id="0sw-bl-t2z"/>
@@ -305,6 +312,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="42" height="42"/>
         <image name="Logo Transparent" width="420" height="420"/>
     </resources>
 </document>
