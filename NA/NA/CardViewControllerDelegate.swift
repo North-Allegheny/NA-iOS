@@ -8,6 +8,8 @@
 
 import Foundation
 
-public protocol CardViewControllerDelegate:NSObjectProtocol{
+@objc public protocol CardViewControllerDelegate:NSObjectProtocol{
     func numberOfCards()->Int
+    optional func spacingBetweenCards()->Int
+    func cardForIndex(int:index)->CardView
 }

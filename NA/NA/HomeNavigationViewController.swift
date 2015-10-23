@@ -2,7 +2,7 @@
 //  HomeNavigationViewController.swift
 //  NA
 //
-//  Created by NA App on 10/8/15.
+//  Created by Alex Taffe on 10/8/15.
 //  Copyright © 2015 NA App. All rights reserved.
 //
 

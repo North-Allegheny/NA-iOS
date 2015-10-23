@@ -2,7 +2,7 @@
 //  InitialViewController.swift
 //  NA
 //
-//  Created by NA App on 10/5/15.
+//  Created by Alex Taffe on 10/5/15.
 //  Copyright © 2015 NA App. All rights reserved.
 //
 
