@@ -12,7 +12,7 @@ import Foundation
     //Data functions
     func numberOfCards()->Int
     func cardForIndex(index:Int)->CardView
-    optional func headerView()->UIView
+    optional func headerView()->HomeHeaderView
     
     //formatting functions
     optional func spacingBetweenCards()->Float

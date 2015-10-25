@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeHeaderView: UIView {
+public class HomeHeaderView: UIView {
     @IBOutlet var coverImage: UIImageView!
 
     /*

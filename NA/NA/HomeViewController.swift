@@ -48,7 +48,7 @@ class HomeViewController: CardViewController, CardViewControllerDelegate {
         return true
     }
     
-    func headerView() -> UIView {
+    func headerView() -> HomeHeaderView {
         let headerView = NSBundle.mainBundle().loadNibNamed("HomeHeader", owner: nil, options: nil)[0] as! HomeHeaderView
         return headerView
     }
