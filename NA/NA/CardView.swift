@@ -9,6 +9,10 @@
 import UIKit
 
 public class CardView: UIView {
+
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     var borderEnabled:Bool?
     var borderColor:UIColor?
@@ -16,6 +20,7 @@ public class CardView: UIView {
     var titleColor:UIColor?
     var titleBackgroundColor:UIColor?
     var textLines:[String]?
+    var customView:UIView?
 
     /*
     // Only override drawRect: if you perform custom drawing.
