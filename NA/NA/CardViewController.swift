@@ -38,7 +38,7 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         headerView!.frame = CGRect(x: 0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         
-        cardScrollView.frame = CGRect(x: 0, y: originalScrollY! - scrollView.contentOffset.y, width: cardScrollView.frame.width, height: originalScrollHeight! + scrollView.frame.height)
+        // cardScrollView.frame = CGRect(x: 0, y: originalScrollY! - scrollView.contentOffset.y, width: cardScrollView.frame.width, height: originalScrollHeight! + scrollView.frame.height)
         // }
         // else{
         // }
