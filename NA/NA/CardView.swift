@@ -10,9 +10,6 @@ import UIKit
 
 public class CardView: UIView {
 
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     var borderEnabled:Bool?
     var borderColor:UIColor?

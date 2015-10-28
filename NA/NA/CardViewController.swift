@@ -112,10 +112,13 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         blurHeaderImageView = UIImageView(frame: (headerView?.frame)!)
+        
+        
         blurHeaderImageView.image = headerView?.coverImage.image!.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
-        blurHeaderImageView.contentMode = UIViewContentMode.ScaleAspectFill
         blurHeaderImageView.alpha = 0.0
         self.view.addSubview(blurHeaderImageView)
+        
+        print("Header size: \(headerView!.coverImage.frame)\nHeader blur size: \(blurHeaderImageView.frame)")
     }
     
     override public func didReceiveMemoryWarning() {
