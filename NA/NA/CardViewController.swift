@@ -19,8 +19,6 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
     private var headerView:HomeHeaderView?
     private var blurHeaderImageView:UIImageView!
     private var originalHeaderHeight:CGFloat?
-    private var originalScrollHeight:CGFloat?
-    private var originalScrollY:CGFloat?
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         //if(scrollView.contentOffset.y < headerView?.frame.height){
         blurHeaderImageView?.alpha = scrollView.contentOffset.y / 10
@@ -28,17 +26,11 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         if originalHeaderHeight == nil{
             originalHeaderHeight = headerView?.frame.height
         }
-        if originalScrollHeight == nil{
-            originalScrollHeight = scrollView.frame.height
-        }
-        if originalScrollY == nil{
-            originalScrollY = scrollView.frame.minY
-        }
         
         blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         headerView!.frame = CGRect(x: 0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         
-        // cardScrollView.frame = CGRect(x: 0, y: originalScrollY! - scrollView.contentOffset.y, width: cardScrollView.frame.width, height: originalScrollHeight! + scrollView.frame.height)
+        cardScrollView.contentSize = CGSize(width: cardScrollView.contentSize.width, height: originalScrollHeight! + scrollView.contentOffset.y)
         // }
         // else{
         // }
