@@ -30,7 +30,6 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         headerView!.frame = CGRect(x: 0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         
-        cardScrollView.contentSize = CGSize(width: cardScrollView.contentSize.width, height: originalScrollHeight! + scrollView.contentOffset.y)
         // }
         // else{
         // }
@@ -128,7 +127,26 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         blurHeaderImageView.alpha = 0.0
         self.view.addSubview(blurHeaderImageView)
         
-        print("Header size: \(headerView!.coverImage.frame)\nHeader blur size: \(blurHeaderImageView.frame)")
+        
+        // Set vertical effect
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
+            type: .TiltAlongVerticalAxis)
+        verticalMotionEffect.minimumRelativeValue = -10
+        verticalMotionEffect.maximumRelativeValue = 10
+        
+        // Set horizontal effect
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
+            type: .TiltAlongHorizontalAxis)
+        horizontalMotionEffect.minimumRelativeValue = -10
+        horizontalMotionEffect.maximumRelativeValue = 10
+        
+        // Create group to combine both
+        let group = UIMotionEffectGroup()
+        group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
+        
+        // Add both effects to your view
+        blurHeaderImageView.addMotionEffect(group)
+        headerView?.coverImage.addMotionEffect(group)
     }
     
     override public func didReceiveMemoryWarning() {
