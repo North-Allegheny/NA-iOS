@@ -14,13 +14,31 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
     weak public var delegate: CardViewControllerDelegate?
     private var numberOfCards:Int!
     private var cards:[CardView]!
-    private var scrollView:UIScrollView!
+    private var cardScrollView:UIScrollView!
     private var cardSpacing:Float!
     private var headerView:HomeHeaderView?
     private var blurHeaderImageView:UIImageView!
+    private var originalHeaderHeight:CGFloat?
+    private var originalScrollHeight:CGFloat?
+    private var originalScrollY:CGFloat?
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         //if(scrollView.contentOffset.y < headerView?.frame.height){
         blurHeaderImageView?.alpha = scrollView.contentOffset.y / 10
+        
+        if originalHeaderHeight == nil{
+            originalHeaderHeight = headerView?.frame.height
+        }
+        if originalScrollHeight == nil{
+            originalScrollHeight = scrollView.frame.height
+        }
+        if originalScrollY == nil{
+            originalScrollY = scrollView.frame.minY
+        }
+        
+        blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+        headerView!.frame = CGRect(x: 0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+        
+        cardScrollView.frame = CGRect(x: 0, y: originalScrollY! - scrollView.contentOffset.y, width: cardScrollView.frame.width, height: originalScrollHeight! + scrollView.frame.height)
         // }
         // else{
         // }
@@ -41,16 +59,16 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         if let header = delegate?.headerView?(){
             headerView = header
             headerView?.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 200)
-            scrollView = UIScrollView(frame: CGRect(x: 0, y: (headerView?.frame.height)! - UIApplication.sharedApplication().statusBarFrame.height, width: screenWidth, height: screenHeight + UIApplication.sharedApplication().statusBarFrame.height - (headerView?.frame.height)!))
-            self.view.addSubview(scrollView)
+            cardScrollView = UIScrollView(frame: CGRect(x: 0, y: (headerView?.frame.height)! - UIApplication.sharedApplication().statusBarFrame.height, width: screenWidth, height: screenHeight + UIApplication.sharedApplication().statusBarFrame.height - (headerView?.frame.height)!))
+            self.view.addSubview(cardScrollView)
             self.view.addSubview(headerView!)
         }
         else{
-            scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
-            self.view.addSubview(scrollView)
+            cardScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+            self.view.addSubview(cardScrollView)
         }
-        scrollView.contentSize = CGSize(width: 0, height: 0)
-        scrollView.delegate = self
+        cardScrollView.contentSize = CGSize(width: 0, height: 0)
+        cardScrollView.delegate = self
         
         
         if let spacing = delegate?.spacingBetweenCards?(){
@@ -62,14 +80,14 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         
         if let barIsLight = delegate?.useLightScrollBar?(){
             if barIsLight{
-                scrollView.indicatorStyle = UIScrollViewIndicatorStyle.White
+                cardScrollView.indicatorStyle = UIScrollViewIndicatorStyle.White
             }
             else{
-                scrollView.indicatorStyle = UIScrollViewIndicatorStyle.Black
+                cardScrollView.indicatorStyle = UIScrollViewIndicatorStyle.Black
             }
         }
         else{
-            scrollView.indicatorStyle = UIScrollViewIndicatorStyle.Black
+            cardScrollView.indicatorStyle = UIScrollViewIndicatorStyle.Black
         }
         
         for i in 0 ..< numberOfCards!{
@@ -83,7 +101,7 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         }
         
         let cardX = CGFloat(111/4.0)
-        var currentY = CGFloat(cardSpacing) + scrollView.contentSize.height
+        var currentY = CGFloat(cardSpacing) + cardScrollView.contentSize.height
         for var i = 0; i < numberOfCards; ++i{
             cards[i].frame = CGRect(x: cardX, y: currentY, width: screenWidth - 111 / 2.0, height: 200)
             currentY += cards[i].frame.height + CGFloat(cardSpacing)
@@ -103,12 +121,12 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             
             cards[i].addSubview(cardTitle)
             
-            scrollView.addSubview(cards[i])
+            cardScrollView.addSubview(cards[i])
             if i + 1 != numberOfCards{
-                scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: scrollView.contentSize.height + cards[i].frame.height + CGFloat(cardSpacing))
+                cardScrollView.contentSize = CGSize(width: cardScrollView.frame.size.width, height: cardScrollView.contentSize.height + cards[i].frame.height + CGFloat(cardSpacing))
             }
             else{
-                scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: scrollView.frame.height + 20)
+                cardScrollView.contentSize = CGSize(width: cardScrollView.frame.size.width, height: cardScrollView.frame.height + 20)
             }
         }
         blurHeaderImageView = UIImageView(frame: (headerView?.frame)!)
