@@ -3,7 +3,7 @@
  * REALM CONFIDENTIAL
  * __________________
  *
- *  [2011] - [2012] Realm Inc
+ *  [2011] - [2015] Realm Inc
  *  All Rights Reserved.
  *
  * NOTICE:  All information contained herein is, and remains
@@ -23,11 +23,15 @@
 namespace realm {
 
 
-template<class Spec> class BasicTable;
+template<class Spec>
+class BasicTable;
 
-template<class T> struct IsBasicTable { static const bool value = false; };
-template<class Spec> struct IsBasicTable<BasicTable<Spec>> { static const bool value = true; };
-template<class Spec> struct IsBasicTable<const BasicTable<Spec>> { static const bool value = true; };
+template<class T>
+struct IsBasicTable { static const bool value = false; };
+template<class Spec>
+struct IsBasicTable<BasicTable<Spec>> { static const bool value = true; };
+template<class Spec>
+struct IsBasicTable<const BasicTable<Spec>> { static const bool value = true; };
 
 
 } // namespace realm

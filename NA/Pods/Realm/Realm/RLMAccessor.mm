@@ -380,35 +380,7 @@ static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSU
 // any getter/setter
 static inline id RLMGetAnyProperty(__unsafe_unretained RLMObjectBase *const obj, NSUInteger col_ndx) {
     RLMVerifyAttached(obj);
-
-    realm::Mixed mixed = obj->_row.get_mixed(col_ndx);
-    switch (mixed.get_type()) {
-        case RLMPropertyTypeString:
-            return RLMStringDataToNSString(mixed.get_string());
-        case RLMPropertyTypeInt: {
-            return @(mixed.get_int());
-        case RLMPropertyTypeFloat:
-            return @(mixed.get_float());
-        case RLMPropertyTypeDouble:
-            return @(mixed.get_double());
-        case RLMPropertyTypeBool:
-            return @(mixed.get_bool());
-        case RLMPropertyTypeDate:
-            return RLMDateTimeToNSDate(mixed.get_datetime());
-        case RLMPropertyTypeData: {
-            realm::BinaryData bd = mixed.get_binary();
-            return RLMBinaryDataToNSData(bd);
-        }
-        case RLMPropertyTypeArray:
-            @throw [NSException exceptionWithName:@"RLMNotImplementedException"
-                                           reason:@"RLMArray not yet supported" userInfo:nil];
-
-            // for links and other unsupported types throw
-        case RLMPropertyTypeObject:
-        default:
-            @throw RLMException(@"Invalid data type for RLMPropertyTypeAny property.");
-        }
-    }
+    return RLMMixedToObjc(obj->_row.get_mixed(col_ndx));
 }
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger col_ndx, __unsafe_unretained id val) {
     RLMVerifyInWriteTransaction(obj);
@@ -638,8 +610,8 @@ static IMP RLMAccessorStandaloneSetter(RLMProperty *prop, RLMAccessorCode access
 }
 
 // macros/helpers to generate objc type strings for registering methods
-#define GETTER_TYPES(C) C ":@"
-#define SETTER_TYPES(C) "v:@" C
+#define GETTER_TYPES(C) C "@:"
+#define SETTER_TYPES(C) "v@:" C
 
 // getter type strings
 // NOTE: this typecode is really the the first charachter of the objc/runtime.h type
@@ -802,28 +774,7 @@ static Class RLMCreateAccessorClass(Class objectClass,
 }
 
 Class RLMAccessorClassForObjectClass(Class objectClass, RLMObjectSchema *schema, NSString *prefix) {
-    Class cls = RLMCreateAccessorClass(objectClass, schema, prefix, RLMAccessorGetter, RLMAccessorSetter);
-    Class metaCls = object_getClass(cls);
-    IMP imp = imp_implementationWithBlock(^{ return NO; });
-
-    // Tell KVO not to override our setters to send notifications, as we cover
-    // that ourselves
-#define RLM_SEL_PREFIX "automaticallyNotifiesObserversOf"
-    const size_t prefixLen = sizeof(RLM_SEL_PREFIX) - 1;
-    char selName[prefixLen + realm::Descriptor::max_column_name_length + 1] = RLM_SEL_PREFIX;
-#undef RLM_SEL_PREFIX
-
-    for (RLMProperty *prop in schema.properties) {
-        NSUInteger usedBytes = 0;
-        [prop.name getBytes:selName+prefixLen
-                  maxLength:realm::Descriptor::max_column_name_length
-                 usedLength:&usedBytes encoding:NSUTF8StringEncoding
-                    options:0 range:{0, prop.name.length} remainingRange:nullptr];
-        selName[prefixLen] = toupper(selName[prefixLen]);
-        selName[prefixLen + usedBytes] = 0;
-        class_addMethod(metaCls, sel_registerName(selName), imp, "B:@");
-    }
-    return cls;
+    return RLMCreateAccessorClass(objectClass, schema, prefix, RLMAccessorGetter, RLMAccessorSetter);
 }
 
 Class RLMStandaloneAccessorClassForObjectClass(Class objectClass, RLMObjectSchema *schema) {

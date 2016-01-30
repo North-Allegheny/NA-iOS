@@ -3,7 +3,7 @@
  * REALM CONFIDENTIAL
  * __________________
  *
- *  [2011] - [2012] Realm Inc
+ *  [2011] - [2015] Realm Inc
  *  All Rights Reserved.
  *
  * NOTICE:  All information contained herein is, and remains
@@ -24,10 +24,14 @@ namespace realm {
 namespace util {
 
 
-template<class T, class A, class B> struct EitherTypeIs { static const bool value = false; };
-template<class T, class A> struct EitherTypeIs<T,T,A> { static const bool value = true; };
-template<class T, class A> struct EitherTypeIs<T,A,T> { static const bool value = true; };
-template<class T> struct EitherTypeIs<T,T,T> { static const bool value = true; };
+template<class T, class A, class B>
+struct EitherTypeIs { static const bool value = false; };
+template<class T, class A>
+struct EitherTypeIs<T,T,A> { static const bool value = true; };
+template<class T, class A>
+struct EitherTypeIs<T,A,T> { static const bool value = true; };
+template<class T>
+struct EitherTypeIs<T,T,T> { static const bool value = true; };
 
 
 } // namespace util

@@ -47,8 +47,9 @@
 // - What version of Realm is being used, and from which language (obj-c or Swift).
 // - What version of OS X it's running on (in case Xcode aggressively drops
 //   support for older versions again, we need to know what we need to support).
-// - The mimimum iOS/OS X version that the application is targeting (again, to
+// - The minimum iOS/OS X version that the application is targeting (again, to
 //   help us decide what versions we need to support). 
 // - An anonymous MAC address and bundle ID to aggregate the other information on.
+// - What version of Swift is being used (if applicable).
 
 void RLMSendAnalytics();

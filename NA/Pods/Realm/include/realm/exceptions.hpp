@@ -3,7 +3,7 @@
  * REALM CONFIDENTIAL
  * __________________
  *
- *  [2011] - [2012] Realm Inc
+ *  [2011] - [2015] Realm Inc
  *  All Rights Reserved.
  *
  * NOTICE:  All information contained herein is, and remains
@@ -58,6 +58,11 @@ public:
     const char* what() const noexcept override;
 };
 
+/// Thrown if you attempt to execute a query that depends on a deleted LinkView
+class DeletedLinkView : public std::exception {
+public:
+    const char* what() const noexcept override;
+};
 
 /// The \c FileFormatUpgradeRequired exception can be thrown by the \c
 /// SharedGroup constructor when opening a database that uses a deprecated file
@@ -113,6 +118,7 @@ public:
         table_index_out_of_range,
         row_index_out_of_range,
         column_index_out_of_range,
+        string_position_out_of_range,
         link_index_out_of_range,
         bad_version,
         illegal_type,
@@ -142,19 +148,14 @@ public:
         /// attached to an underlying object.
         detached_accessor,
 
+        /// Indicates that a specified row index of a target table (a link) is
+        /// out of range. This is used for disambiguation in cases such as
+        /// Table::set_link() where one specifies both a row index of the origin
+        /// table, and a row index of the target table.
+        target_row_index_out_of_range,
+
         // Indicates that an involved column lacks a search index.
         no_search_index,
-
-        // Indicates that an involved table lacks a primary key.
-        no_primary_key,
-
-        // Indicates that an attempt was made to add a primary key to a table that
-        // already had a primary key.
-        has_primary_key,
-
-        /// Indicates that a modification to a column was attempted that cannot
-        /// be done because the column is the primary key of the table.
-        is_primary_key,
 
         /// Indicates that a modification was attempted that would have produced a
         /// duplicate primary value.
@@ -212,6 +213,11 @@ inline const char* DescriptorMismatch::what() const noexcept
 inline const char* FileFormatUpgradeRequired::what() const noexcept
 {
     return "Database upgrade required but prohibited";
+}
+
+inline const char* DeletedLinkView::what() const noexcept
+{
+    return "Attempt to use a LinkView that has been deleted";
 }
 
 inline LogicError::LogicError(LogicError::ErrorKind kind):
