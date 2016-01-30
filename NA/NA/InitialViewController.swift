@@ -33,7 +33,7 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         tylerLoginButton.layer.shadowRadius = 1
         tylerLoginButton.layer.shadowOffset = CGSizeMake(0, 2)
         tylerLoginButton.backgroundColor = UIColor.whiteColor()
-        tylerLoginButton.tintColor = UIColor.grayColor()
+        tylerLoginButton.tintColor = UIColor.whiteColor()
         tylerLoginButton.layer.borderColor = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1).CGColor
         let tylerLabel = UILabel()
         tylerLabel.text = "Sign in"
@@ -41,7 +41,7 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         tylerLabel.textColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1)
         tylerLabel.sizeToFit()
         tylerLabel.frame = blackboardLoginButton.bounds
-        tylerLabel.frame = CGRectMake(tylerLabel.frame.minX + 45, tylerLabel.frame.minY - 5, tylerLabel.frame.width, tylerLabel.frame.height)
+        tylerLabel.frame = CGRectMake(tylerLabel.frame.minX + 50, tylerLabel.frame.minY - 5, tylerLabel.frame.width, tylerLabel.frame.height)
         tylerLoginButton.addSubview(tylerLabel)
         
         blackboardLoginButton.layer.cornerRadius = 2
@@ -52,7 +52,7 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         blackboardLoginButton.layer.shadowRadius = 1
         blackboardLoginButton.layer.shadowOffset = CGSizeMake(0, 2)
         blackboardLoginButton.backgroundColor = UIColor.whiteColor()
-        blackboardLoginButton.tintColor = UIColor.grayColor()
+        blackboardLoginButton.tintColor = UIColor.whiteColor()
         blackboardLoginButton.layer.borderColor = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1).CGColor
         let blackBoardLabel = UILabel()
         blackBoardLabel.text = "Sign in"
@@ -60,7 +60,7 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         blackBoardLabel.textColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1)
         blackBoardLabel.sizeToFit()
         blackBoardLabel.frame = blackboardLoginButton.bounds
-        blackBoardLabel.frame = CGRectMake(blackBoardLabel.frame.minX + 45, blackBoardLabel.frame.minY - 5, blackBoardLabel.frame.width, blackBoardLabel.frame.height)
+        blackBoardLabel.frame = CGRectMake(blackBoardLabel.frame.minX + 50, blackBoardLabel.frame.minY - 5, blackBoardLabel.frame.width, blackBoardLabel.frame.height)
         blackboardLoginButton.addSubview(blackBoardLabel)
         
         let blackboardImage = UIImage(named: "Black Board Logo")
