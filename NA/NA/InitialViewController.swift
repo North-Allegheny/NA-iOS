@@ -25,8 +25,6 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         //auto Google sign in if possible
         GIDSignIn.sharedInstance().signInSilently()
         
-        print("Google Button Size: \(tylerLoginButton.bounds.width)")
-        
         tylerLoginButton.layer.cornerRadius = 2
         tylerLoginButton.layer.masksToBounds = false
         tylerLoginButton.layer.borderWidth = 1
@@ -37,7 +35,14 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         tylerLoginButton.backgroundColor = UIColor.whiteColor()
         tylerLoginButton.tintColor = UIColor.grayColor()
         tylerLoginButton.layer.borderColor = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1).CGColor
-        tylerLoginButton.titleLabel?.text = "Tyler"
+        let tylerLabel = UILabel()
+        tylerLabel.text = "Sign in"
+        tylerLabel.font = UIFont(name: "Roboto", size: 14)
+        tylerLabel.textColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1)
+        tylerLabel.sizeToFit()
+        tylerLabel.frame = blackboardLoginButton.bounds
+        tylerLabel.frame = CGRectMake(tylerLabel.frame.minX + 45, tylerLabel.frame.minY - 5, tylerLabel.frame.width, tylerLabel.frame.height)
+        tylerLoginButton.addSubview(tylerLabel)
         
         blackboardLoginButton.layer.cornerRadius = 2
         blackboardLoginButton.layer.masksToBounds = false
@@ -49,21 +54,26 @@ class InitialViewController: UIViewController, GIDSignInUIDelegate {
         blackboardLoginButton.backgroundColor = UIColor.whiteColor()
         blackboardLoginButton.tintColor = UIColor.grayColor()
         blackboardLoginButton.layer.borderColor = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1).CGColor
-        blackboardLoginButton.titleLabel!.textColor = UIColor.blackColor()
-        blackboardLoginButton.titleLabel!.text = "Black Board"
-        blackboardLoginButton.titleLabel?.frame = CGRectMake(100, 25, 10, 10)
-        print(blackboardLoginButton.titleLabel!.frame)
+        let blackBoardLabel = UILabel()
+        blackBoardLabel.text = "Sign in"
+        blackBoardLabel.font = UIFont(name: "Roboto", size: 14)
+        blackBoardLabel.textColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1)
+        blackBoardLabel.sizeToFit()
+        blackBoardLabel.frame = blackboardLoginButton.bounds
+        blackBoardLabel.frame = CGRectMake(blackBoardLabel.frame.minX + 45, blackBoardLabel.frame.minY - 5, blackBoardLabel.frame.width, blackBoardLabel.frame.height)
+        blackboardLoginButton.addSubview(blackBoardLabel)
         
         let blackboardImage = UIImage(named: "Black Board Logo")
         blackboardLoginButton.setImage(blackboardImage, forState: .Normal)
         blackboardLoginButton.contentMode = .ScaleAspectFit
-        blackboardLoginButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -60, bottom: 0, right: 0)
-        blackboardLoginButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 100, bottom: 0, right: 0)
+        blackboardLoginButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -155, bottom: 0, right: 0)
+        blackboardLoginButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         let tylerImage = UIImage(named: "Tyler Logo")
         tylerLoginButton.setImage(tylerImage, forState: .Normal)
         tylerLoginButton.contentMode = .ScaleAspectFit
-        tylerLoginButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -110, bottom: 0, right: 0)
+        tylerLoginButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -155, bottom: 0, right: 0)
+        tylerLoginButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         instructionText.alpha = 0.0
         tylerLoginButton.alpha = 0.0

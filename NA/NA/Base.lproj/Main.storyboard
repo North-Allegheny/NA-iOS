@@ -206,7 +206,6 @@
                                     <constraint firstAttribute="width" constant="192" id="7ol-88-6hy"/>
                                     <constraint firstAttribute="height" constant="40" id="aRI-OS-Bk7"/>
                                 </constraints>
-                                <state key="normal" title="Tyler"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-m2-IRu">
                                 <rect key="frame" x="200" y="516" width="200" height="50"/>
@@ -214,7 +213,6 @@
                                     <constraint firstAttribute="height" constant="40" id="17x-yz-93c"/>
                                     <constraint firstAttribute="width" constant="192" id="QLr-bk-l4I"/>
                                 </constraints>
-                                <state key="normal" title="Blackboard"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-ug-PoA">
                                 <rect key="frame" x="248" y="562" width="104" height="30"/>
