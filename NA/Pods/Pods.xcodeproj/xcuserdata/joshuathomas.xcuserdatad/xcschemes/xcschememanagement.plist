@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>1PasswordExtension-OnePasswordExtensionResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>1PasswordExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>FXBlurView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
@@ -47,12 +62,52 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FC166B1477038FFC49136188C7A008C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>212BECB9413089234526F9A84043052B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4EF4A252C27347C6014F8BF65FA36B38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF743D8114FA043F9725B42F89ABDABB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C2814CF121DAF0BC8208C621CC869657</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD378EDFF42487A7E1BB47D45223953B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8B57B89BC28E74DBA035283E73E0107</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8BBBFE394C1B68AEF0DFD3292C18E76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF62A25D3E480238C0D473193AB70325</key>
 		<dict>
 			<key>primary</key>
 			<true/>
