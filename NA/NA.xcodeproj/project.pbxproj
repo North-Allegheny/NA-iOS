@@ -18,6 +18,7 @@
 		7A5EA2D51BC3EDF000657BC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */; };
 		7A6D3A071BC68EA700346DBD /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */; };
 		B0945BB6A7B60689A6DF4A19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C089F1017D7782A451222DD /* Pods.framework */; };
+		FA157CC61C5D469600D187EA /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA157CC51C5D469600D187EA /* GradesViewController.swift */; };
 		FA5903591BD2B59B0005ADE7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */; };
 		FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */; };
 		FAB205571BDABE02002CF973 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB205561BDABE02002CF973 /* CardView.swift */; };
@@ -65,6 +66,7 @@
 		7A5EA2D41BC3EDF000657BC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7A6D3A061BC68EA700346DBD /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
 		B152B1ED337C5DCE9ABBF486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA157CC51C5D469600D187EA /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		FA5903581BD2B59B0005ADE7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
 		FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		FAB205561BDABE02002CF973 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				FAB205561BDABE02002CF973 /* CardView.swift */,
 				FAC21E781BD9D6EA002611BA /* HomeViewController.swift */,
 				FAB205581BDAE258002CF973 /* credits.html */,
+				FA157CC51C5D469600D187EA /* GradesViewController.swift */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA157CC61C5D469600D187EA /* GradesViewController.swift in Sources */,
 				FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */,
 				FAB205571BDABE02002CF973 /* CardView.swift in Sources */,
 				FA59035B1BD2B6F80005ADE7 /* HomeHeaderView.swift in Sources */,

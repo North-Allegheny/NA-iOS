@@ -46,33 +46,52 @@
             <point key="canvasLocation" x="1492" y="-345"/>
         </scene>
         <!--Grades-->
-        <scene sceneID="4jf-XE-sVK">
+        <scene sceneID="TzA-si-DF1">
             <objects>
-                <tableViewController title="Grades" id="tDj-h3-a91" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HrV-7d-4dJ">
+                <navigationController id="DgR-Bn-iKv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Grades" id="9Rb-xN-JHs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XLO-rS-OZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nNE-Sp-dJP" kind="relationship" relationship="rootViewController" id="QXC-7l-Wcn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfe-jv-SXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="342"/>
+        </scene>
+        <!--Grades-->
+        <scene sceneID="ZkD-I0-jVi">
+            <objects>
+                <viewController id="nNE-Sp-dJP" customClass="GradesViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tew-i6-KW9"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgm-we-5u7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pae-W9-gdY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nSn-zb-CeB">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nSn-zb-CeB" id="pWt-jL-g0q">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="tDj-h3-a91" id="EvG-uR-Xls"/>
-                            <outlet property="delegate" destination="tDj-h3-a91" id="90h-qT-636"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Grades" id="Sxa-ng-DoD"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h5u-Qi-gGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Grades" id="cal-LE-gfM"/>
+                    <navigationItem key="navigationItem" title="Grades" id="hpH-eW-ZOA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="UE8-1c-BFF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ya5-or-nsT">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <action selector="showDropDown:" destination="nNE-Sp-dJP" id="FIy-tz-Ecd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9a-Er-v4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="327"/>
+            <point key="canvasLocation" x="1492" y="377"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="d92-2z-KEd">
@@ -279,7 +298,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="aQH-dm-Ijd" kind="relationship" relationship="viewControllers" id="0sw-bl-t2z"/>
-                        <segue destination="tDj-h3-a91" kind="relationship" relationship="viewControllers" id="GyX-Sv-jQE"/>
+                        <segue destination="DgR-Bn-iKv" kind="relationship" relationship="viewControllers" id="weB-ce-k2e"/>
                         <segue destination="vRq-33-w9d" kind="relationship" relationship="viewControllers" id="R6x-Kj-EKg"/>
                         <segue destination="anu-GK-UvH" kind="relationship" relationship="viewControllers" id="CtD-ae-QhU"/>
                         <segue destination="soW-0a-jUk" kind="relationship" relationship="viewControllers" id="h8F-QR-9Go"/>

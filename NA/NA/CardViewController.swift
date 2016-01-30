@@ -27,8 +27,10 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             originalHeaderHeight = headerView?.frame.height
         }
         
+        if(headerView != nil){
         blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
         headerView!.frame = CGRect(x: 0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+        }
         
         // }
         // else{
@@ -120,33 +122,35 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
                 cardScrollView.contentSize = CGSize(width: cardScrollView.frame.size.width, height: cardScrollView.frame.height + 20)
             }
         }
-        blurHeaderImageView = UIImageView(frame: (headerView?.frame)!)
-        
-        
-        blurHeaderImageView.image = headerView?.coverImage.image!.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
-        blurHeaderImageView.alpha = 0.0
-        self.view.addSubview(blurHeaderImageView)
-        
-        
-        // Set vertical effect
-        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
-            type: .TiltAlongVerticalAxis)
-        verticalMotionEffect.minimumRelativeValue = -10
-        verticalMotionEffect.maximumRelativeValue = 10
-        
-        // Set horizontal effect
-        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
-            type: .TiltAlongHorizontalAxis)
-        horizontalMotionEffect.minimumRelativeValue = -10
-        horizontalMotionEffect.maximumRelativeValue = 10
-        
-        // Create group to combine both
-        let group = UIMotionEffectGroup()
-        group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
-        
-        // Add both effects to your view
-        blurHeaderImageView.addMotionEffect(group)
-        headerView?.coverImage.addMotionEffect(group)
+        if(headerView != nil){
+            blurHeaderImageView = UIImageView(frame: (headerView?.frame)!)
+            
+            
+            blurHeaderImageView.image = headerView?.coverImage.image!.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+            blurHeaderImageView.alpha = 0.0
+            self.view.addSubview(blurHeaderImageView)
+            
+            
+            // Set vertical effect
+            let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
+                type: .TiltAlongVerticalAxis)
+            verticalMotionEffect.minimumRelativeValue = -10
+            verticalMotionEffect.maximumRelativeValue = 10
+            
+            // Set horizontal effect
+            let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
+                type: .TiltAlongHorizontalAxis)
+            horizontalMotionEffect.minimumRelativeValue = -10
+            horizontalMotionEffect.maximumRelativeValue = 10
+            
+            // Create group to combine both
+            let group = UIMotionEffectGroup()
+            group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
+            
+            // Add both effects to your view
+            blurHeaderImageView.addMotionEffect(group)
+            headerView?.coverImage.addMotionEffect(group)
+        }
     }
     
     override public func didReceiveMemoryWarning() {
