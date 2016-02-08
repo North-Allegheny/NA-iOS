@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Dropper-Dropper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>Dropper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>FXBlurView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -52,6 +62,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>051516B554AE55B7808B5C467EA861B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>10845198053E6B4C1CB0DB2377D456CA</key>
 		<dict>
 			<key>primary</key>
@@ -77,7 +92,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>31EED6CB33E01074F58C2A9BD0D6AAC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B3961526FDEBB30E9B2A5AA7FC94E21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45578CDEEA433B6D3CD75E2496DC69EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4EF4A252C27347C6014F8BF65FA36B38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A464350EB82410ABECD436791B3C487</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0A50901DF30B3AC81620ADB7FC89700</key>
 		<dict>
 			<key>primary</key>
 			<true/>
