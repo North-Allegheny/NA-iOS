@@ -12,7 +12,12 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
 
     let dropDown = DropDown()
     @IBAction func showDropDown(sender: AnyObject) {
-        
+        if dropDown.isShown{
+            dropDown.hide()
+        }
+        else{
+            dropDown.show()
+        }
     }
     override func viewDidLoad() {
         self.delegate = self

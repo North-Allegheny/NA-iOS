@@ -9,6 +9,38 @@
 import UIKit
 
 class DropDown: UIView {
+    
+    var animationDuration = 0.5
+    private(set) var isShown = false
+    var height:Float?
+    var offset = 0
+    var view:UIView{
+        get{
+            return self
+        }
+        set(newValue){
+            self.addSubview(newValue)
+        }
+    }
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func show(){
+        if height == nil{
+            //throw
+        }
+        isShown = true
+    }
+    func hide(){
+        isShown = false
+    }
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -18,4 +50,8 @@ class DropDown: UIView {
     }
     */
 
+}
+
+enum DropDownDirection{
+    case Up,Down
 }
