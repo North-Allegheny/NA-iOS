@@ -7,24 +7,18 @@
 //
 
 import UIKit
-import BTNavigationDropdownMenu
+import Dropper
 
 class GradesViewController: CardViewController, CardViewControllerDelegate {
 
-    var menuView:BTNavigationDropdownMenu!
+    let dropDown = Dropper()
     @IBAction func showDropDown(sender: AnyObject) {
-        if menuView.isShown!{
-            menuView.hide()
-        }
-        else{
-            menuView.show()
-        }
+        
     }
     override func viewDidLoad() {
         self.delegate = self
         super.viewDidLoad()
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "grades", items: ["grades"])
-
+        
         // Do any additional setup after loading the view.
     }
 

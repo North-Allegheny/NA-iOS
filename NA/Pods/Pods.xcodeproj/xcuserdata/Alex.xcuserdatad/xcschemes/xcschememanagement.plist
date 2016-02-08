@@ -19,7 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>BTNavigationDropdownMenu.xcscheme</key>
+		<key>Dropper-Dropper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Dropper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,27 +57,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>051516B554AE55B7808B5C467EA861B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BF776348047F057585A5F9F3AA670F8</key>
+		<key>31EED6CB33E01074F58C2A9BD0D6AAC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4044474A0DBD2F713BCDA24CCD03DE08</key>
+		<key>3B3961526FDEBB30E9B2A5AA7FC94E21</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84B6A56B678055D16D4ADF6491C8A84A</key>
+		<key>45578CDEEA433B6D3CD75E2496DC69EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0B9513B9CAC66D341D9AD88E9860C78</key>
+		<key>9A464350EB82410ABECD436791B3C487</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0A50901DF30B3AC81620ADB7FC89700</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -83,11 +98,6 @@
 			<true/>
 		</dict>
 		<key>D8B57B89BC28E74DBA035283E73E0107</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD23F1DA220A44C7E84F356B64871271</key>
 		<dict>
 			<key>primary</key>
 			<true/>
