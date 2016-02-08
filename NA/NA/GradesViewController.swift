@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Dropper
 
 class GradesViewController: CardViewController, CardViewControllerDelegate {
 
-    let dropDown = Dropper()
+    let dropDown = DropDown()
     @IBAction func showDropDown(sender: AnyObject) {
         
     }
