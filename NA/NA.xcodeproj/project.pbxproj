@@ -24,6 +24,7 @@
 		FA6A40F11C692FED00FF2974 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA157CC51C5D469600D187EA /* GradesViewController.swift */; };
 		FA6A40F31C69338C00FF2974 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A40F21C69338C00FF2974 /* DropDown.swift */; };
 		FA99BB8C1C9B37DB001FE116 /* GradeFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA99BB8B1C9B37DB001FE116 /* GradeFilterView.xib */; };
+		FA99BB8E1C9B3E04001FE116 /* GradeFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99BB8D1C9B3E04001FE116 /* GradeFilterView.swift */; };
 		FAB205571BDABE02002CF973 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB205561BDABE02002CF973 /* CardView.swift */; };
 		FAB205591BDAE258002CF973 /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB205581BDAE258002CF973 /* credits.html */; };
 		FAC21E731BD9D56F002611BA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21E721BD9D56F002611BA /* CardViewController.swift */; };
@@ -74,6 +75,7 @@
 		FA59035A1BD2B6F80005ADE7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		FA6A40F21C69338C00FF2974 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		FA99BB8B1C9B37DB001FE116 /* GradeFilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradeFilterView.xib; sourceTree = "<group>"; };
+		FA99BB8D1C9B3E04001FE116 /* GradeFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFilterView.swift; sourceTree = "<group>"; };
 		FAB205561BDABE02002CF973 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FAB205581BDAE258002CF973 /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		FAC21E721BD9D56F002611BA /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				FA157CC51C5D469600D187EA /* GradesViewController.swift */,
 				FA6A40F21C69338C00FF2974 /* DropDown.swift */,
 				FA99BB8B1C9B37DB001FE116 /* GradeFilterView.xib */,
+				FA99BB8D1C9B3E04001FE116 /* GradeFilterView.swift */,
 			);
 			path = NA;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				7A07AF9E1BC2970E00158178 /* AppDelegate.swift in Sources */,
 				FAC21E751BD9D613002611BA /* CardViewControllerDelegate.swift in Sources */,
 				7A07AFCE1BC29B9500158178 /* InitialViewController.swift in Sources */,
+				FA99BB8E1C9B3E04001FE116 /* GradeFilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
