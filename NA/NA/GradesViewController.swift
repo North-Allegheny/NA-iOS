@@ -23,7 +23,7 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
         self.delegate = self
         super.viewDidLoad()
         dropDown.masterView = self
-        dropDown.view = UIView()
+        dropDown.view = UIView.loadFromNibNamed("GradeFilterView")
         dropDown.height = 200
         
         // Do any additional setup after loading the view.
@@ -67,5 +67,16 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
+}
+
+extension UIView {
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+            ).instantiateWithOwner(nil, options: nil)[0] as? UIView
+    }
 }
