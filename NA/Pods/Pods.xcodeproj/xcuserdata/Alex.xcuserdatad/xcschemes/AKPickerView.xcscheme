@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '595CB259B68E909D09D01DB5'
-               BlueprintName = '1PasswordExtension-OnePasswordExtensionResources'
+               BlueprintIdentifier = 'CC4A67ABAF1905CD6B60A9E0'
+               BlueprintName = 'AKPickerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'OnePasswordExtensionResources.bundle'>
+               BuildableName = 'AKPickerView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

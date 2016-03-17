@@ -9,7 +9,6 @@
 import UIKit
 
 public class CardView: UIView {
-
     
     var borderEnabled:Bool?
     var borderColor:UIColor?

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AKPickerView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Dropper-Dropper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>051516B554AE55B7808B5C467EA861B9</key>
+		<key>0EBE0EAEDC081243917CA991884EA6C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B3961526FDEBB30E9B2A5AA7FC94E21</key>
+		<key>4FC83769D1C9957801F65AF713A10D5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45578CDEEA433B6D3CD75E2496DC69EC</key>
+		<key>605C9197024438DC92DA19241FEE4392</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A464350EB82410ABECD436791B3C487</key>
+		<key>836E5EBA01301B58626BE3130163D537</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -103,6 +108,11 @@
 			<true/>
 		</dict>
 		<key>E0DDE27ED43A087CB3CBFA5C2860125A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9436BFB5A8CC69A656A84504A1871F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

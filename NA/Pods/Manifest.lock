@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - AKPickerView (0.2.7)
   - Dropper (2.3)
   - FXBlurView (1.6.4)
   - Google/Core (1.3.2):
@@ -52,6 +53,7 @@ PODS:
 DEPENDENCIES:
   - 1PasswordExtension
   - AFNetworking
+  - AKPickerView
   - Dropper
   - FXBlurView
   - Google/SignIn
@@ -61,6 +63,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   1PasswordExtension: 627d5aecf210c7636968faf5a4c3546c9531385b
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AKPickerView: 125372e36fcc372216127600a541f14dcdbb7993
   Dropper: 451d4918c6b7cb5f7f665420a9b6a54d875b380f
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   Google: 97618e118111b998cce1d8dd1bd98b82301d72db
