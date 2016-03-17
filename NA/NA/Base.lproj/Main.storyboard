@@ -81,7 +81,10 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ya5-or-nsT">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Filter"/>
+                                <connections>
+                                    <action selector="showDropDown:" destination="nNE-Sp-dJP" eventType="touchUpInside" id="bk5-jm-8fj"/>
+                                </connections>
                             </button>
                             <connections>
                                 <action selector="showDropDown:" destination="nNE-Sp-dJP" id="FIy-tz-Ecd"/>

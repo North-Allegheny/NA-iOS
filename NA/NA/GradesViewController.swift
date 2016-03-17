@@ -22,6 +22,10 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
     override func viewDidLoad() {
         self.delegate = self
         super.viewDidLoad()
+        dropDown.masterView = self
+        dropDown.view = UIView()
+        dropDown.view?.backgroundColor = UIColor.greenColor()
+        dropDown.height = 200
         
         // Do any additional setup after loading the view.
     }
