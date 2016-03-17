@@ -24,7 +24,6 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
         super.viewDidLoad()
         dropDown.masterView = self
         dropDown.view = UIView()
-        dropDown.view?.backgroundColor = UIColor.greenColor()
         dropDown.height = 200
         
         // Do any additional setup after loading the view.

@@ -15,7 +15,7 @@ class DropDown: UIView {
     var height:Float?
     var offset = 0
     var masterView:UIViewController?
-    private var blurView = UIVisualEffectView(effect: UIBlurEffect())
+    private var blurView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
     private var addedView:UIView?
     var view:UIView?{
         get{
@@ -31,6 +31,8 @@ class DropDown: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.addSubview(blurView)
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,14 +50,24 @@ class DropDown: UIView {
         masterView?.view.addSubview(self)
         self.layer.zPosition = 100
         self.addedView!.frame = CGRectMake(0, (masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
+        blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
         UIView.animateWithDuration(0.48, delay: 0, options: .CurveEaseIn, animations: {
             self.addedView!.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, CGFloat(self.height!))
+            self.blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, CGFloat(self.height!))
             }, completion: nil)
         
         
     }
     func hide(){
         isShown = false
+        UIView.animateWithDuration(0.48, delay: 0, options: .CurveEaseIn, animations: {
+            self.addedView!.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
+            self.blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
+            }, completion: {
+                (value: Bool) in
+                self.removeFromSuperview()
+        })
+        
     }
 
     /*
