@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AKPickerView.xcscheme</key>
+		<key>AKPickerView-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,12 +62,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EBE0EAEDC081243917CA991884EA6C9</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<key>279DBEF948AD5B930C854DA67DD09417</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,17 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4FC83769D1C9957801F65AF713A10D5F</key>
+		<key>38928981DF51964CFE41E5B534E14A5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>605C9197024438DC92DA19241FEE4392</key>
+		<key>694A2A66889A21C0F13476B412145A22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>836E5EBA01301B58626BE3130163D537</key>
+		<key>765367FDDBC318D3085ED464B91F18E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>833BAB1B8689BCB97EB8BD7D288FD91D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -108,11 +113,6 @@
 			<true/>
 		</dict>
 		<key>E0DDE27ED43A087CB3CBFA5C2860125A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E9436BFB5A8CC69A656A84504A1871F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

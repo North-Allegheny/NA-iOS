@@ -86,7 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/OnePasswordExtension.framework"
   install_framework "Pods/AFNetworking.framework"
-  install_framework "Pods/AKPickerView.framework"
+  install_framework "Pods/AKPickerView_Swift.framework"
   install_framework "Pods/Dropper.framework"
   install_framework "Pods/FXBlurView.framework"
   install_framework "Pods/Realm.framework"
@@ -96,7 +96,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/OnePasswordExtension.framework"
   install_framework "Pods/AFNetworking.framework"
-  install_framework "Pods/AKPickerView.framework"
+  install_framework "Pods/AKPickerView_Swift.framework"
   install_framework "Pods/Dropper.framework"
   install_framework "Pods/FXBlurView.framework"
   install_framework "Pods/Realm.framework"
