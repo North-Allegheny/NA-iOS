@@ -9,16 +9,31 @@
 import UIKit
 import AKPickerView_Swift
 
-class GradeFilterView: UIView {
+class GradeFilterView: UIView, AKPickerViewDataSource, AKPickerViewDelegate {
     
-    var picker
+    @IBOutlet var picker: AKPickerView!
+    
+    let pickerItems = ["test", "test2", "test3"]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        picker.textColor = UIColor.blackColor()
+        self.picker.reloadData()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
+    }
+    
+    func numberOfItemsInPickerView(pickerView: AKPickerView) -> Int {
+        return pickerItems.count
+    }
+    
+    func pickerView(pickerView: AKPickerView, titleForItem item: Int) -> String {
+        return pickerItems[item]
     }
 
     /*

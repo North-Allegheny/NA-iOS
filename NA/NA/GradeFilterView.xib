@@ -23,12 +23,20 @@
                         <segment title="Second"/>
                     </segments>
                 </segmentedControl>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lt6-9q-MIH" customClass="AKPickerView" customModule="AKPickerView_Swift">
+                    <rect key="frame" x="1" y="99" width="600" height="46"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="KIg-Ca-9Ak" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="28D-Ca-tji"/>
+                <constraint firstItem="lt6-9q-MIH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="4Gf-WK-9xi"/>
                 <constraint firstItem="j1q-qQ-4tb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NmI-SP-A7o"/>
             </constraints>
+            <connections>
+                <outlet property="picker" destination="lt6-9q-MIH" id="0HC-dq-6Oh"/>
+            </connections>
         </view>
     </objects>
 </document>
