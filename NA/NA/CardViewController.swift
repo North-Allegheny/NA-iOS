@@ -26,16 +26,17 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
         if originalHeaderHeight == nil{
             originalHeaderHeight = headerView?.frame.height
         }
-        
-        if headerView != nil{
-        scrollView.frame = CGRect(x: 0, y: headerView!.frame.maxY - scrollView.contentOffset.y, width: headerView!.frame.width, height: originalHeaderHeight! + scrollView.contentOffset.y)
-        blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
-        headerView!.frame = CGRect(x:0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+        //Change 243 to change height
+        if headerView != nil && scrollView.contentOffset.y <= 243{
+            blurHeaderImageView.frame = CGRect(x: 0, y: 0, width: blurHeaderImageView.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+            headerView!.frame = CGRect(x:0, y: 0, width: headerView!.frame.width, height: originalHeaderHeight! - scrollView.contentOffset.y)
+            scrollView.frame = CGRect(x: 0, y: headerView!.frame.maxY - scrollView.contentOffset.y, width: headerView!.frame.width, height: scrollView.frame.height + scrollView.contentOffset.y)
             
             //FIX: this was broken so I commented it out
-            /*if height == (height + 1){
-            scrollView.frame = CGRect(x: 0, y: headerView!.frame.maxY - scrollView.contentOffset.y, width:headerView!.frame.width, height: originalHeaderHeight! + scrollView.contentOffset.y)
-            }*/
+            
+            
+            //scrollView.frame = CGRect(x: 0, y: headerView!.frame.maxY - scrollView.contentOffset.y, width:headerView!.frame.width, height: originalHeaderHeight! + scrollView.contentOffset.y)
+            
             
             print("x: \(scrollView.frame.minX)\ny: \(scrollView.frame.minY)\nwidth: \(scrollView.frame.width)\nheight: \(scrollView.frame.height)")
         }
@@ -130,6 +131,11 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             else{
                 cardScrollView.contentSize = CGSize(width: cardScrollView.frame.size.width, height: cardScrollView.frame.height + 20)
             }
+            let refresher = UIRefreshControl()
+            refresher.addTarget(self, action: "refreshView", forControlEvents: UIControlEvents.ValueChanged)
+            
+            cardScrollView.addSubview(refresher)
+            // cardScrollView
         }
         if(headerView != nil){
             blurHeaderImageView = UIImageView(frame: (headerView?.frame)!)
@@ -160,6 +166,9 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             blurHeaderImageView.addMotionEffect(group)
             headerView?.coverImage.addMotionEffect(group)
         }
+    }
+    func refreshView(){
+        print("User Refreshed")
     }
     
     override public func didReceiveMemoryWarning() {
