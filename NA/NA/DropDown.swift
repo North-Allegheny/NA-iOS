@@ -28,7 +28,6 @@ class DropDown: UIView {
         }
     }
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(blurView)
@@ -52,17 +51,15 @@ class DropDown: UIView {
         self.frame = CGRectMake(0, (masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
         self.addedView!.frame = CGRectMake(0, (masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
         blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
-        UIView.animateWithDuration(0.48, delay: 0, options: .CurveEaseIn, animations: {
+        UIView.animateWithDuration(animationDuration, delay: 0, options: .CurveEaseIn, animations: {
             self.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, CGFloat(self.height!))
             self.addedView!.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, CGFloat(self.height!))
             self.blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, CGFloat(self.height!))
             }, completion: nil)
-        
-        
     }
     func hide(){
         isShown = false
-        UIView.animateWithDuration(0.48, delay: 0, options: .CurveEaseIn, animations: {
+        UIView.animateWithDuration(animationDuration, delay: 0, options: .CurveEaseIn, animations: {
             self.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
             self.addedView!.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)
             self.blurView.frame = CGRectMake(0, (self.masterView?.navigationController?.navigationBar.frame.maxY)!, UIScreen.mainScreen().bounds.size.width, 0)

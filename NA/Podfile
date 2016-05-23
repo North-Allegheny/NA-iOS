@@ -4,9 +4,10 @@ use_frameworks!
 
 pod 'Google/SignIn'
 pod 'AFNetworking'
-pod 'RealmSwift'
+pod 'RealmSwift', '~> 0.97.1'
 pod 'SSKeychain'
 pod '1PasswordExtension'
 pod 'FXBlurView'
 pod 'Dropper'
 pod 'AKPickerView-Swift'
+pod 'SwiftyJSON'

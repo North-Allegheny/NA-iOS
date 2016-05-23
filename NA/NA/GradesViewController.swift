@@ -26,6 +26,9 @@ class GradesViewController: CardViewController, CardViewControllerDelegate {
         dropDown.view = UIView.loadFromNibNamed("GradeFilterView")
         dropDown.height = 200
         
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
         // Do any additional setup after loading the view.
     }
 

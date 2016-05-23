@@ -38,9 +38,6 @@
 // shared schema for this class
 + (RLMObjectSchema *)sharedSchema;
 
-// provide injection point for alternative Swift object util class
-+ (Class)objectUtilClass:(BOOL)isSwift;
-
 @end
 
 @interface RLMDynamicObject : RLMObject

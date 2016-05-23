@@ -49,7 +49,7 @@
         <scene sceneID="TzA-si-DF1">
             <objects>
                 <navigationController id="DgR-Bn-iKv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Grades" id="9Rb-xN-JHs"/>
+                    <tabBarItem key="tabBarItem" title="Grades" image="Grades" id="9Rb-xN-JHs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XLO-rS-OZ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -91,6 +91,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9a-Er-v4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,11 +126,73 @@
             </objects>
             <point key="canvasLocation" x="1557" y="1011"/>
         </scene>
+        <!--Hall Pass-->
+        <scene sceneID="Qss-qX-TUU">
+            <objects>
+                <viewController id="gc3-zc-GtC" customClass="HallPassViewController" customModule="NA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N5H-ja-M1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="jg8-Vo-4Qq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rg8-YE-fR8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMd-kO-hed">
+                                <rect key="frame" x="279" y="438" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeU-6o-vo7">
+                                <rect key="frame" x="180" y="130" width="240" height="251"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="TqO-k8-BDB"/>
+                                    <constraint firstAttribute="width" constant="240" id="ohk-59-Kb4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IeU-6o-vo7" firstAttribute="centerX" secondItem="rg8-YE-fR8" secondAttribute="centerX" id="10G-Rn-6i5"/>
+                            <constraint firstItem="YMd-kO-hed" firstAttribute="top" secondItem="IeU-6o-vo7" secondAttribute="bottom" constant="57" id="Axr-sF-FkJ"/>
+                            <constraint firstItem="YMd-kO-hed" firstAttribute="centerY" secondItem="rg8-YE-fR8" secondAttribute="centerY" id="LTa-MF-cRL"/>
+                            <constraint firstItem="IeU-6o-vo7" firstAttribute="top" secondItem="N5H-ja-M1F" secondAttribute="bottom" constant="66" id="r7O-4A-zxd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hall Pass" id="66w-yB-hVJ"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="YMd-kO-hed" id="3tv-Yr-LLD"/>
+                        <outlet property="qrCodeFrameView" destination="IeU-6o-vo7" id="LZH-od-E5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nb-Rr-cqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="1717"/>
+        </scene>
+        <!--Hall Pass-->
+        <scene sceneID="Jih-JH-3Nu">
+            <objects>
+                <navigationController id="n9c-ef-Tb5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hall Pass" image="Hall Pass" id="2um-FL-gTB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W96-tq-rwm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gc3-zc-GtC" kind="relationship" relationship="rootViewController" id="Jwi-rW-rQ7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpw-qi-WoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="1717"/>
+        </scene>
         <!--Messenger-->
         <scene sceneID="WHJ-Vk-Rjp">
             <objects>
                 <navigationController title="Messenger" id="vRq-33-w9d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Messenger" id="4R5-Z5-V0p"/>
+                    <tabBarItem key="tabBarItem" title="Messenger" image="Messages" id="4R5-Z5-V0p"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jrs-et-Ajz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -141,25 +204,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HL4-H2-eDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="737" y="1011"/>
-        </scene>
-        <!--Hall Pass-->
-        <scene sceneID="eVK-Rd-OzC">
-            <objects>
-                <viewController title="Hall Pass" id="anu-GK-UvH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EYC-8W-IZJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="yNb-bl-zU7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rir-s8-466">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Hall Pass" id="0gv-zT-xx2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lnY-l4-OMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="737" y="1705"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ifl-ew-ekM">
@@ -174,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="fuS-Xj-ywF"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="fuS-Xj-ywF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDW-13-SYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,17 +347,21 @@
                         <segue destination="aQH-dm-Ijd" kind="relationship" relationship="viewControllers" id="0sw-bl-t2z"/>
                         <segue destination="DgR-Bn-iKv" kind="relationship" relationship="viewControllers" id="weB-ce-k2e"/>
                         <segue destination="vRq-33-w9d" kind="relationship" relationship="viewControllers" id="R6x-Kj-EKg"/>
-                        <segue destination="anu-GK-UvH" kind="relationship" relationship="viewControllers" id="CtD-ae-QhU"/>
+                        <segue destination="n9c-ef-Tb5" kind="relationship" relationship="viewControllers" id="adJ-Lz-nbL"/>
                         <segue destination="soW-0a-jUk" kind="relationship" relationship="viewControllers" id="h8F-QR-9Go"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-82" y="-8"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Grades" width="16" height="16"/>
+        <image name="Hall Pass" width="16" height="16"/>
         <image name="Home" width="21" height="21"/>
         <image name="Logo Transparent" width="420" height="420"/>
+        <image name="Messages" width="16" height="16"/>
+        <image name="Settings" width="16" height="16"/>
     </resources>
 </document>

@@ -8,11 +8,15 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
-
+    var userId:String?                 // For client-side use only!
+    var idToken:String? // Safe to send to the server
+    var name:String?
+    var email:String?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -37,10 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         withError error: NSError!) {
             if (error == nil) {
                 // Perform any operations on signed in user here.
-                let userId = user.userID                  // For client-side use only!
-                let idToken = user.authentication.idToken // Safe to send to the server
-                let name = user.profile.name
-                let email = user.profile.email
+                userId = user.userID                  // For client-side use only!
+                idToken = user.authentication.idToken // Safe to send to the server
+                name = user.profile.name
+                email = user.profile.email
+                if email?.rangeOfString("northallegheny.org") == nil{
+                    let alert = UIAlertController(title: "Error", message: "Only NA email addresses are allowed to access this app", preferredStyle: .Alert)
+                    self.window?.rootViewController?.showViewController(alert, sender: self)
+                }
                 // ...
             } else {
                 print("\(error.localizedDescription)")

@@ -28,7 +28,6 @@
 #import "RLMResults_Private.h"
 #import "RLMSchema_Private.h"
 
-#import "object_store.hpp"
 #import "shared_realm.hpp"
 
 using namespace realm;

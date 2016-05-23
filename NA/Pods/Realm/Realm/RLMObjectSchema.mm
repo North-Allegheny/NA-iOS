@@ -28,8 +28,6 @@
 #import "RLMSwiftSupport.h"
 #import "RLMUtil.hpp"
 
-#import "object_store.hpp"
-
 using namespace realm;
 
 // private properties
@@ -154,7 +152,7 @@ using namespace realm;
 }
 
 + (NSArray *)propertiesForClass:(Class)objectClass isSwift:(bool)isSwiftClass {
-    Class objectUtil = [objectClass objectUtilClass:isSwiftClass];
+    Class objectUtil = RLMObjectUtilClass(isSwiftClass);
     NSArray *ignoredProperties = [objectUtil ignoredPropertiesForClass:objectClass];
 
     // For Swift classes we need an instance of the object when parsing properties

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0B5D11EBCB32C56D4C29022B'
+               BlueprintIdentifier = 'DD03A38433E5EDBE16111293'
                BlueprintName = 'Dropper-Dropper'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Dropper.bundle'>

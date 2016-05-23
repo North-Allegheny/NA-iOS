@@ -9,7 +9,7 @@
 import UIKit
 import FXBlurView
 
-let offset_HeaderStop:CGFloat = 20.0 // At this offset the Header stops its transformations
+let offset_HeaderStop:CGFloat = 150 // At this offset the Header stops its transformations
 let offset_B_LabelHeader:CGFloat = 95.0 // At this offset the Black label reaches the Header
 let distance_W_LabelHeader:CGFloat = 35.0 // The distance between the bottom of the Header and the top of the White Label
 
@@ -24,45 +24,55 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
     private var blurHeaderImageView:UIImageView!
     private var originalHeaderHeight:CGFloat?
     public func scrollViewDidScroll(scrollView: UIScrollView) {
+        let screenHeight = UIScreen.mainScreen().bounds.size.height
         let offset = scrollView.contentOffset.y
-        var avatarTransform = CATransform3DIdentity
         var headerTransform = CATransform3DIdentity
         
         // PULL DOWN -----------------
         
-        if offset < 0 {
+        if headerView != nil{
+            if offset < 0 {
+                
+                let headerScaleFactor:CGFloat = -(offset) / headerView!.bounds.height
+                let headerSizevariation = ((headerView!.bounds.height * (1.0 + headerScaleFactor)) - headerView!.bounds.height)/2.0
+                headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0)
+                headerTransform = CATransform3DScale(headerTransform, 1.0 + headerScaleFactor, 1.0 + headerScaleFactor, 0)
+                
+                headerView!.layer.transform = headerTransform
+                
+                
+            }
+                
+                // SCROLL UP/DOWN ------------
+                
+            else {
+                
+                // Header -----------
+                
+                headerTransform = CATransform3DTranslate(headerTransform, 0, max(-offset_HeaderStop, -offset), 0)
+                
+                //  ------------ Label
+                
+                let labelTransform = CATransform3DMakeTranslation(0, max(-distance_W_LabelHeader, offset_B_LabelHeader - offset), 0)
+                //headerLabel.layer.transform = labelTransform
+                
+                //  ------------ Blur
+                
+                blurHeaderImageView?.alpha = min (1.0, (offset - offset_B_LabelHeader)/distance_W_LabelHeader)
+                
+                
+            }
             
-            let headerScaleFactor:CGFloat = -(offset) / headerView!.bounds.height
-            let headerSizevariation = ((headerView!.bounds.height * (1.0 + headerScaleFactor)) - headerView!.bounds.height)/2.0
-            headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0)
-            headerTransform = CATransform3DScale(headerTransform, 1.0 + headerScaleFactor, 1.0 + headerScaleFactor, 0)
+            if offset < offset_HeaderStop{
+                scrollView.frame = CGRect(x: 0, y: headerView!.frame.maxY, width: scrollView.frame.width, height: scrollView.frame.height)
+                //scrollView.contentOffset.y = scrollView.contentOffset.y - 1
+            }
+            
+            // Apply Transformations
             
             headerView!.layer.transform = headerTransform
+            //print(headerView!.frame.maxY)
         }
-            
-            // SCROLL UP/DOWN ------------
-            
-        else {
-            
-            // Header -----------
-            
-            headerTransform = CATransform3DTranslate(headerTransform, 0, max(-offset_HeaderStop, -offset), 0)
-            
-            //  ------------ Label
-            
-            let labelTransform = CATransform3DMakeTranslation(0, max(-distance_W_LabelHeader, offset_B_LabelHeader - offset), 0)
-            //headerLabel.layer.transform = labelTransform
-            
-            //  ------------ Blur
-            
-            blurHeaderImageView?.alpha = min (1.0, (offset - offset_B_LabelHeader)/distance_W_LabelHeader)
-            
-            
-        }
-        
-        // Apply Transformations
-        
-        headerView!.layer.transform = headerTransform
     }
     
     
@@ -184,6 +194,7 @@ public class CardViewController: UIViewController, UIScrollViewDelegate {
             blurHeaderImageView.addMotionEffect(group)
             headerView?.coverImage.addMotionEffect(group)
         }
+        headerView?.clipsToBounds = true
     }
     func refreshView(){
         print("User Refreshed")
